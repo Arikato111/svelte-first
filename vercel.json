@@ -11,7 +11,7 @@
             "headers": [
                 {
                     "key": "X-Frame-Options",
-                    "value": "deny"
+                    "value": "SAMEORIGIN"
                 }
             ]
         }

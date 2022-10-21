@@ -1,0 +1,22 @@
+[
+    {
+        "title": "basic startup crash course",
+        "img": "/cer/hakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg",
+        "link": "/courses/basic-startup-crash-course/"
+    },
+    {
+        "title": "intermediate web application development full stack",
+        "img": "/cer/hakata-Web-Application-Development-Full-Stack-Back-End-Developing-ระดับกลาง-HACKaTHAILAND_page-0001.jpg",
+        "link": "/courses/intermediate-web-application-development-full-stack/"
+    },
+    {
+        "title": "basic web application development full stack",
+        "img": "/cer/hakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg",
+        "link": "/courses/basic-web-application-development-full-stack/"
+    },
+    {
+        "title": "/cer/hakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg",
+        "img": "/cer/hakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg",
+        "link": "/courses/basic-web-design-figma/"
+    }
+]

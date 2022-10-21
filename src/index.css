@@ -1,0 +1,14 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@layer components {
+    .main {
+        @apply min-h-screen bg-purple-50 border-4 border-purple-700 flex justify-center items-center box-border flex-col;
+    }
+}
