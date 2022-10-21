@@ -37,7 +37,7 @@
       <img
         id="certificate"
         title="click to view course"
-        class="w-full lg:w-7/12 shadow-lg shadow-gray-400 print:shadow-none "
+        class="w-full lg:w-7/12 shadow-lg shadow-gray-400 print:shadow-none print:w-screen"
         src={CertificatesData[id].img}
         alt={CertificatesData[id].title}
       />
@@ -49,7 +49,12 @@
   @media print {
     @page {
       margin: 0;
-      size: A4 landscape;
+      size: landscape;
+      scale: 200;
+    }
+    img {
+      /* width: 100%; */
+      height: 100vh;
     }
   }
 </style>
