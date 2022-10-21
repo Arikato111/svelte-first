@@ -1,4 +1,5 @@
 <script>
+  import { Link } from "svelte-routing";
   import "./App.css";
   import ButtonContact from "./components/ButtonContact.svelte";
   import ThreeWord from "./components/ThreeWord.svelte";
@@ -14,16 +15,12 @@
   </div>
   <ThreeWord />
   <div class="flex flex-wrap items-center justify-center">
-    <ButtonContact
-      title="Github"
-      icon="/icons/github.svg"
-      link="/github"
-    />
-    <ButtonContact
-      title="Certificates"
-      icon="/icons/certificate.png"
-      link="/certificates"
-    />
+    <a href="https://github.com/Arikato111">
+      <ButtonContact title="Github" icon="/icons/github.svg" />
+    </a>
+    <Link to="/certificates">
+      <ButtonContact title="Certificates" icon="/icons/certificate.png" />
+    </Link>
   </div>
 </main>
 
