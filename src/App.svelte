@@ -5,6 +5,10 @@
   import ThreeWord from "./components/ThreeWord.svelte";
 </script>
 
+<svelte:head>
+  <title>Nawasan</title>
+</svelte:head>
+
 <main class="main">
   <div class="text-3xl sm:text-6xl text-slate-800 font-medium">
     Hello!, I'm <span class="text-purple-700 use-font font-bold">Nawasan</span

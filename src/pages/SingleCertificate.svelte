@@ -45,6 +45,10 @@
   </div>
 </main>
 
+<svelte:head>
+  <title>{`Nawasan | ${CertificatesData[id].title}`}</title>
+</svelte:head>
+
 <style>
   @media print {
     @page {

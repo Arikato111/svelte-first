@@ -8,6 +8,10 @@
   console.log(CertificateData);
 </script>
 
+<svelte:head>
+  <title>Nawasan | Certificates</title>
+</svelte:head>
+
 <main class="min-h-screen bg-purple-50 box-border border-4 border-purple-700">
   <div class="inline-block">
     <Link to="/">
