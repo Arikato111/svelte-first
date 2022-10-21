@@ -19,6 +19,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
-    "atropos": "^1.0.2"
+    "atropos": "^1.0.2",
+    "svelte-routing": "^1.6.0"
   }
 }

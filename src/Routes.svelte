@@ -1,15 +1,17 @@
 <script>
+  import { Router, Route } from "svelte-routing";
   import App from "./App.svelte";
   import Certificate from "./pages/Certificate.svelte";
+  import Github from "./pages/Github.svelte";
+
+  export let url = "";
 </script>
 
 <svelte:window />
-{#if window.location.pathname === "/"}
-  <App />
-{:else if window.location.pathname === "/certificates"}
-  <Certificate />
-{:else}
-  <script>
-    window.location.pathname = "/"
-  </script>
-{/if}
+
+<Router url={url}>
+  <Route path="/github" component={Github} />
+  <Route path="/certificates" component={Certificate} />
+  <Route path="/" component={App} />
+  <Route path="*" component={App} />
+</Router>
