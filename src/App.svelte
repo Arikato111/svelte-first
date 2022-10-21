@@ -17,7 +17,7 @@
     <ButtonContact
       title="Github"
       icon="/icons/github.svg"
-      link="https://github.com/Arikato111"
+      link="/github"
     />
     <ButtonContact
       title="Certificates"
