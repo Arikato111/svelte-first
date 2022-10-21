@@ -27,7 +27,7 @@
       </button>
     </div>
   </div>
-  <div class="text-center">
+  <div class="text-center my-20 lg:my-0 print:m-0">
     <a
       target="_blank"
       rel="noreferrer"
@@ -49,7 +49,6 @@
   @media print {
     @page {
       margin: 0;
-      width: 90vw;
       size: A4 landscape;
     }
   }
