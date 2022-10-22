@@ -12,7 +12,7 @@
   <title>Nawasan | Certificates</title>
 </svelte:head>
 
-<main class="min-h-screen bg-purple-50 box-border border-4 border-purple-700">
+<main class="main">
   <div class="inline-block">
     <Link to="/">
       <ButtonContact icon="/icons/arrow.png" title="back" />

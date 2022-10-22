@@ -13,7 +13,7 @@
 <svelte:window />
 
 <main
-  class="min-h-screen bg-purple-50 box-border border-4 border-purple-700 print:border-none"
+  class="main"
 >
   <div class="flex justify-between">
     <div class="inline-block cursor-pointer print:hidden">
