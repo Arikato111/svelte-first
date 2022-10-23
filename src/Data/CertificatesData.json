@@ -3,24 +3,24 @@
         "id": 0,
         "title": "basic startup crash course",
         "img": "/cer/hakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg",
-        "link": "/courses/basic-startup-crash-course/"
+        "link": "https://hack1.hackathailand.com/courses/basic-startup-crash-course/"
     },
     {
         "id": 1,
         "title": "intermediate web application development full stack",
         "img": "/cer/hakata-Web-Application-Development-Full-Stack-Back-End-Developing-ระดับกลาง-HACKaTHAILAND_page-0001.jpg",
-        "link": "/courses/intermediate-web-application-development-full-stack/"
+        "link": "https://hack1.hackathailand.com/courses/intermediate-web-application-development-full-stack/"
     },
     {
         "id": 2,
         "title": "basic web application development full stack",
         "img": "/cer/hakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg",
-        "link": "/courses/basic-web-application-development-full-stack/"
+        "link": "https://hack1.hackathailand.com/courses/basic-web-application-development-full-stack/"
     },
     {
         "id": 3,
         "title": "basic web design figma",
         "img": "/cer/hakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg",
-        "link": "/courses/basic-web-design-figma/"
+        "link": "https://hack1.hackathailand.com/courses/basic-web-design-figma/"
     }
 ]

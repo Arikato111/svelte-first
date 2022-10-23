@@ -4,8 +4,8 @@
   import { Link } from "svelte-routing";
 
   import CertificateData from "../Data/CertificatesData.json";
+  import ArrowIcon from "../components/icons/ArrowIcon.svelte";
 
-  console.log(CertificateData);
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 <main class="main">
   <div class="inline-block">
     <Link to="/">
-      <ButtonContact icon="/icons/arrow.png" title="back" />
+      <ButtonContact Icon={ArrowIcon} title="back" />
     </Link>
   </div>
   <div

@@ -2,8 +2,10 @@
   import CertificatesData from "../Data/CertificatesData.json";
   import ButtonContact from "../components/ButtonContact.svelte";
   import { Link } from "svelte-routing";
+  import PrinterIcon from "../components/icons/PrinterIcon.svelte";
+  import ArrowIcon from "../components/icons/ArrowIcon.svelte";
+
   export let id;
-  let domain = "https://hack1.hackathailand.com";
 
   if (!CertificatesData[id]) {
     window.history.back();
@@ -12,18 +14,20 @@
 
 <svelte:window />
 
-<main
-  class="main"
->
-  <div class="flex justify-between">
+<svelte:head>
+  <title>{`Nawasan | ${CertificatesData[id].title}`}</title>
+</svelte:head>
+
+<main class="main">
+  <div>
     <div class="inline-block cursor-pointer print:hidden">
       <Link to="/certificates">
-        <ButtonContact icon="/icons/arrow.png" title="back" />
+        <ButtonContact Icon={ArrowIcon} title="back" />
       </Link>
     </div>
     <div class="inline-block cursor-pointer print:hidden">
-      <button on:click={()=> print()}>
-        <ButtonContact icon="/icons/printer.png" title="Print" />
+      <button on:click={() => print()}>
+        <ButtonContact Icon={PrinterIcon} title="Print" />
       </button>
     </div>
   </div>
@@ -32,7 +36,7 @@
       target="_blank"
       rel="noreferrer"
       class=" flex flex-col items-center"
-      href={domain + CertificatesData[id].link}
+      href={CertificatesData[id].link}
     >
       <img
         id="certificate"
@@ -45,19 +49,14 @@
   </div>
 </main>
 
-<svelte:head>
-  <title>{`Nawasan | ${CertificatesData[id].title}`}</title>
-</svelte:head>
-
 <style>
   @media print {
     @page {
       margin: 0;
-      size: landscape;
-      scale: 200;
+      padding: 0;
+      size: A4 landscape;
     }
     img {
-      /* width: 100%; */
       height: 100vh;
     }
   }

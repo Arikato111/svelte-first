@@ -8,9 +8,9 @@
 
 @layer components {
   .main-flex {
-    @apply min-h-screen bg-purple-50  flex justify-center items-center box-border flex-col;
+    @apply min-h-screen bg-purple-50 dark:bg-slate-900  flex justify-center items-center box-border flex-col;
   }
   .main {
-    @apply min-h-screen bg-purple-50 box-border ;
+    @apply min-h-screen bg-purple-50 dark:bg-slate-900 box-border ;
   }
 }

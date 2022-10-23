@@ -3,6 +3,10 @@
   import "./App.css";
   import ButtonContact from "./components/ButtonContact.svelte";
   import ThreeWord from "./components/ThreeWord.svelte";
+
+  import GithubIcon from "./components/icons/GithubIcon.svelte";
+  import CertificateIcon from "./components/icons/CertificateIcon.svelte";
+  import LinkedinIcon from "./components/icons/LinkedinIcon.svelte";
 </script>
 
 <svelte:head>
@@ -10,7 +14,9 @@
 </svelte:head>
 
 <main class="main-flex">
-  <div class="text-3xl sm:text-6xl text-slate-800 font-medium">
+  <div
+    class="text-3xl sm:text-6xl text-slate-800 dark:text-slate-200 font-medium"
+  >
     Hello!, I'm <span class="text-purple-700 use-font font-bold">Nawasan</span
     ><span
       class="inline-block hover:rotate-45 duration-300 ease-in-out transition"
@@ -20,13 +26,13 @@
   <ThreeWord />
   <div class="flex flex-wrap items-center justify-center">
     <a href="https://github.com/Arikato111">
-      <ButtonContact title="Github" icon="/icons/github.svg" />
+      <ButtonContact title="Github" Icon={GithubIcon} />
     </a>
     <Link to="/certificates">
-      <ButtonContact title="Certificates" icon="/icons/certificate.png" />
+      <ButtonContact title="Certificates" Icon={CertificateIcon} />
     </Link>
     <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
-      <ButtonContact title="Linkedin" icon="/icons/linkedin.svg" />
+      <ButtonContact title="Linkedin" Icon={LinkedinIcon} />
     </a>
   </div>
 </main>
