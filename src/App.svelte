@@ -25,6 +25,9 @@
     <Link to="/certificates">
       <ButtonContact title="Certificates" icon="/icons/certificate.png" />
     </Link>
+    <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
+      <ButtonContact title="Linkedin" icon="/icons/linkedin.svg" />
+    </a>
   </div>
 </main>
 
