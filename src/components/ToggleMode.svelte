@@ -1,12 +1,8 @@
 <script>
   import { isDark } from "./CheckMode";
   import { onMount } from "svelte";
-  let Text = isDark ? "🌚" : "🌞";
+  let Text = isDark() ? "🌚" : "🌞";
   
-  onMount(()=> {
-     Text = isDark ? "🌚" : "🌞";
-  })
-
   function changeMode() {
     let state = window.document.documentElement.classList.contains("dark");
     if (state) {
