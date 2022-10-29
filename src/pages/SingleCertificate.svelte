@@ -46,9 +46,6 @@
             <button on:click={() => print()}>
               <ButtonContact Icon={PrinterIcon} title="Print" />
             </button>
-            <a target="_blank" rel="noreferrer" href={CertificatesData[id].cer}>
-              <ButtonContact Icon={PdfIcon} title="PDF" />
-            </a>
             <a target="_blank" rel="noreferrer" href={CertificatesData[id].link}>
               <ButtonContact Icon={BookIcon} title="Course" />
             </a>
@@ -60,7 +57,7 @@
   <div class="text-center my-20 lg:my-0 print:m-0">
     <img
       id="certificate"
-      title="click to view course"
+      title={CertificatesData[id].title}
       class="w-full inline-block lg:w-7/12 shadow-lg shadow-gray-400 print:shadow-none print:w-screen"
       src={CertificatesData[id].img}
       alt={CertificatesData[id].title}

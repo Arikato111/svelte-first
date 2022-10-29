@@ -4,8 +4,7 @@
         "type": "startup",
         "title": "basic startup crash course",
         "img": "/cer/hakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg",
-        "link": "https://hack1.hackathailand.com/courses/basic-startup-crash-course/",
-        "cer": "https://hack1.hackathailand.com/certificates/startup-crash-course-basic/?course_id=1966&cert-nonce=122004c0b4"
+        "link": "https://hack1.hackathailand.com/courses/basic-startup-crash-course/"
         
     },
     {
@@ -13,16 +12,14 @@
         "type": "website development",
         "title": "intermediate web application development full stack",
         "img": "/cer/hakata-Web-Application-Development-Full-Stack-Back-End-Developing-ระดับกลาง-HACKaTHAILAND_page-0001.jpg",
-        "link": "https://hack1.hackathailand.com/courses/intermediate-web-application-development-full-stack/",
-        "cer": "https://hack1.hackathailand.com/certificates/back-end-developing-%e0%b8%a3%e0%b8%b0%e0%b8%94%e0%b8%b1%e0%b8%9a%e0%b8%81%e0%b8%a5%e0%b8%b2%e0%b8%87/?course_id=1552&cert-nonce=314e9aca62"
+        "link": "https://hack1.hackathailand.com/courses/intermediate-web-application-development-full-stack/"
     },
     {
         "id": 2,
         "type": "website development",
         "title": "basic web application development full stack",
         "img": "/cer/hakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg",
-        "link": "https://hack1.hackathailand.com/courses/basic-web-application-development-full-stack/",
-        "cer": "https://hack1.hackathailand.com/certificates/web-app-development-fuli-stack-basic/?course_id=1511&cert-nonce=047d462ac5"
+        "link": "https://hack1.hackathailand.com/courses/basic-web-application-development-full-stack/"
     },
     {
         "id": 3,
@@ -30,6 +27,5 @@
         "title": "basic web design figma",
         "img": "/cer/hakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg",
         "link": "https://hack1.hackathailand.com/courses/basic-web-design-figma/"
-        ,"cer": "https://hack1.hackathailand.com/certificates/web-designfigma-basic/?course_id=1507&cert-nonce=b1359373bb"
     }
 ]
