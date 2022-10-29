@@ -23,7 +23,7 @@
   >
     {#each CertificateData as Cer, id}
       <Link to={`/certificates/${id}`}>
-        <CertificateShow src={Cer.img} alt={Cer.title} />
+        <CertificateShow src={Cer.img} alt={Cer.title} type={Cer.type} />
       </Link>
     {/each}
   </div>

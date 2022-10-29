@@ -17,7 +17,7 @@
 
 <svelte:window />
 
-<div class="absolute top-0 right-0 text-5xl p-2">
+<div class="absolute top-0 right-0 text-5xl p-2 print:hidden">
   <button on:click={changeMode}>
     {Text}
   </button>

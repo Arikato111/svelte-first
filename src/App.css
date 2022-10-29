@@ -3,3 +3,7 @@
 .use-font {
     font-family: 'Fuzzy Bubbles', cursive;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
