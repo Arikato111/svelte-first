@@ -2,16 +2,8 @@
   import CertificatesData from "../Data/CertificatesData.json";
   import ButtonContact from "../components/ButtonContact.svelte";
   import { Link } from "svelte-routing";
-  import PrinterIcon from "../components/icons/PrinterIcon.svelte";
   import ArrowIcon from "../components/icons/ArrowIcon.svelte";
-  import {
-    Popover,
-    PopoverButton,
-    PopoverPanel,
-  } from "@rgossiaux/svelte-headlessui";
-  import PdfIcon from "../components/icons/PdfIcon.svelte";
-  import MenuIcon from "../components/icons/MenuIcon.svelte";
-  import BookIcon from "../components/icons/BookIcon.svelte";
+  import MenuDropdown from "../components/MenuDropdown.svelte";
 
 
   export let id;
@@ -34,25 +26,7 @@
         <ButtonContact Icon={ArrowIcon} title="back" />
       </Link>
     </div>
-
-    <div class="inline-block cursor-pointer print:hidden">
-      <Popover class="relative">
-        <PopoverButton class="text-red-800"
-          ><ButtonContact Icon={MenuIcon} title="" /></PopoverButton
-        >
-
-        <PopoverPanel class="absolute z-10">
-          <div class="grid-cols-2">
-            <button on:click={() => print()}>
-              <ButtonContact Icon={PrinterIcon} title="Print" />
-            </button>
-            <a target="_blank" rel="noreferrer" href={CertificatesData[id].link}>
-              <ButtonContact Icon={BookIcon} title="Course" />
-            </a>
-          </div>
-        </PopoverPanel>
-      </Popover>
-    </div>
+    <MenuDropdown id={id} />
   </div>
   <div class="text-center my-20 lg:my-0 print:m-0">
     <img
