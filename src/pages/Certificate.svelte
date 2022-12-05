@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>Nawasan | Certificates</title>
+  <title>Arikato111 | Certificates</title>
 </svelte:head>
 
 <main class="main">

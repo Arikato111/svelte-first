@@ -10,14 +10,15 @@
 </script>
 
 <svelte:head>
-  <title>Nawasan</title>
+  <title>Arikato111</title>
 </svelte:head>
 
 <main class="main-flex">
   <div
     class="text-3xl sm:text-6xl text-slate-800 dark:text-slate-200 font-medium"
   >
-    Hello!, I'm <span class="text-purple-700 use-font font-bold">Nawasan</span
+    Hello!, I'm <span class="text-purple-700 use-font font-bold changename"
+      ><span>Arikato111</span></span
     ><span
       class="inline-block hover:rotate-45 duration-300 ease-in-out transition"
       >👋</span
@@ -38,4 +39,10 @@
 </main>
 
 <style>
+  .changename:hover span {
+    display: none;
+  }
+  .changename:hover::before {
+    content: "Nawasan ";
+  }
 </style>
