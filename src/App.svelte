@@ -7,6 +7,8 @@
   import GithubIcon from "./components/icons/GithubIcon.svelte";
   import CertificateIcon from "./components/icons/CertificateIcon.svelte";
   import LinkedinIcon from "./components/icons/LinkedinIcon.svelte";
+  import YoutubeIcon from "./components/icons/YoutubeIcon.svelte";
+  import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
 </script>
 
 <svelte:head>
@@ -34,6 +36,18 @@
     </Link>
     <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
       <ButtonContact title="Linkedin" Icon={LinkedinIcon} />
+    </a>
+    <a href="https://youtube.com/@Arikato111">
+      <ButtonContact Icon={YoutubeIcon} title="Youtube" />
+    </a>
+    <a
+      href="https://onlyfans.com/Arikato111"
+      on:click={(e) => {
+        e.preventDefault();
+        window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo&feature=youtu.be"
+      }}
+    >
+      <ButtonContact Icon={OnlyFansIcon} title="OnlyFans" />
     </a>
   </div>
 </main>
