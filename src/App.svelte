@@ -44,7 +44,7 @@
       href="https://onlyfans.com/Arikato111"
       on:click={(e) => {
         e.preventDefault();
-        window.location.href = "https://www.youtube.com/watch?v=iik25wqIuFo&feature=youtu.be"
+        window.location.href = "https://www.youtube.com/watch?v=4MHfWtH9MTM&t=25s"
       }}
     >
       <ButtonContact Icon={OnlyFansIcon} title="OnlyFans" />
