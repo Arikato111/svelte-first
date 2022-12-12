@@ -9,6 +9,8 @@
   import LinkedinIcon from "./components/icons/LinkedinIcon.svelte";
   import YoutubeIcon from "./components/icons/YoutubeIcon.svelte";
   import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
+  import MenuDropdown from "./components/MenuDropdown.svelte";
+  import ArrowIcon from "./components/icons/ArrowIcon.svelte";
 </script>
 
 <svelte:head>
@@ -42,9 +44,13 @@
     </a>
     <a
       href="https://onlyfans.com/Arikato111"
+      on:contextmenu={(e) => {
+        e.preventDefault();
+      }}
       on:click={(e) => {
         e.preventDefault();
-        window.location.href = "https://www.youtube.com/watch?v=4MHfWtH9MTM&t=25s"
+        window.location.href =
+          "https://www.youtube.com/watch?v=4MHfWtH9MTM&t=25s";
       }}
     >
       <ButtonContact Icon={OnlyFansIcon} title="OnlyFans" />
