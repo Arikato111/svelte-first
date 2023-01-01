@@ -19,7 +19,7 @@
       ><ButtonContact Icon={MenuIcon} title="" /></PopoverButton
     >
 
-    <PopoverPanel class="absolute z-10">
+    <PopoverPanel class="absolute z-10 duration-200">
       <div class="grid-cols-2">
         <button on:click={() => print()}>
           <ButtonContact Icon={PrinterIcon} title="Print" />

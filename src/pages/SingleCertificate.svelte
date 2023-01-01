@@ -16,7 +16,7 @@
 <svelte:window />
 
 <svelte:head>
-  <title>{`Arikato111 | ${CertificatesData[id].title}`}</title>
+  <title>{`${CertificatesData[id].title} | Arikato111`}</title>
 </svelte:head>
 
 <main class="main">
