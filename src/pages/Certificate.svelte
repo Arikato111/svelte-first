@@ -2,10 +2,14 @@
   import CertificateShow from "../components/CertificateShow.svelte";
   import ButtonContact from "../components/ButtonContact.svelte";
   import { Link } from "svelte-routing";
+  import { onMount } from "svelte";
 
   import CertificateData from "../Data/CertificatesData.json";
   import ArrowIcon from "../components/icons/ArrowIcon.svelte";
 
+  if(CertificateData[0].id == 0) {
+    CertificateData.reverse();
+  }
 </script>
 
 <svelte:head>
