@@ -25,7 +25,7 @@
           <ButtonContact Icon={PrinterIcon} title="Print" />
         </button>
         <a target="_blank" rel="noreferrer" href={CertificatesData[id].link}>
-          <ButtonContact Icon={BookIcon} title="Course" />
+          <ButtonContact Icon={BookIcon} title="link" />
         </a>
       </div>
     </PopoverPanel>
