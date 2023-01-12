@@ -16,3 +16,5 @@
 ## TODOs
 
 - [ ] add more TODOs
+- [ ] add show open source projects
+- [ ] add pdf files to show detail of some certificates
