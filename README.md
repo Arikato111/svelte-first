@@ -15,6 +15,6 @@
 
 ## TODOs
 
-- [ ] add more TODOs
-- [ ] add show open source projects
+- [x] add more TODOs
+- [x] add show open source projects
 - [ ] add pdf files to show detail of some certificates
