@@ -9,6 +9,7 @@
   import LinkedinIcon from "./components/icons/LinkedinIcon.svelte";
   import YoutubeIcon from "./components/icons/YoutubeIcon.svelte";
   import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
+  import FileIcon from "./components/icons/FileIcon.svelte";
 
   let url = "https://www.youtube.com/watch?v=4MHfWtH9MTM&t=25s";
 </script>
@@ -35,6 +36,9 @@
     </a>
     <Link to="/certificates">
       <ButtonContact title="Certificates" Icon={CertificateIcon} />
+    </Link>
+    <Link to="/projects">
+      <ButtonContact title="Projects" Icon={FileIcon} />
     </Link>
     <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
       <ButtonContact title="Linkedin" Icon={LinkedinIcon} />
