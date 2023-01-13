@@ -32,13 +32,13 @@
         "type": "School Website Writing Competition",
         "title": "Provincial website writing competition",
         "img": "/cer/compete-school-level1.jpg",
-        "link": "http://www2.chainat.ac.th/vecskills/pages/level3_contest_trophy2.php?p_id=34&s_id=2&l_id=3"
+        "link": "/files/competition.pdf"
     },
     {
         "id": 5,
         "type": "School Website Writing Competition",
         "title": "Regional website writing competition",
         "img": "/cer/regional-website-writing-competition.jpg",
-        "link": "http://www2.chainat.ac.th/vecskills/pages/level2_contest_trophy2.php?st_id=2"
+        "link": "/files/competition.pdf"
     }
 ]
