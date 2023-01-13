@@ -9,7 +9,8 @@
     fill-white  dark:fill-slate-200 flex justify-center 
     items-center rounded-lg border-2 py-1 px-3 font-medium
      border-transparent dark:border-slate-200 
-     dark:hover:bg-gray-700 m-1 hover:scale-105"
+     dark:hover:bg-gray-700 m-1 hover:scale-105
+     shadow-md shadow-gray-300"
 >
   <span class="inline-block w-8 mx-1">
     <svelte:component this={Icon} />
