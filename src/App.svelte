@@ -30,7 +30,7 @@
     >
   </div>
   <ThreeWord />
-  <div class="flex flex-wrap items-center justify-center">
+  <div class="sm:flex flex-wrap items-center justify-center">
     <a href="https://github.com/Arikato111">
       <ButtonContact title="Github" Icon={GithubIcon} />
     </a>
