@@ -22,12 +22,12 @@
     <div class="bottom-0 absolute my-1 w-full">
       <a
         target="_blank"
-        class="px-2 py-1 bg-purple-500 text-white rounded-md hover:bg-purple-400 hover:scale-105 duration-200 inline-block dark:bg-purple-800 dark:hover:bg-purple-600"
+        class="px-2 py-1 bg-purple-400 hover:bg-purple-500 border border-purple-500 text-white rounded-md hover:scale-105 duration-200 inline-block dark:bg-purple-800 dark:hover:bg-purple-600"
         href={link}>website</a
         >
         <a
         target="_blank"
-        class="px-2 py-1 bg-purple-500 text-white rounded-md hover:bg-purple-400 hover:scale-105 duration-200 inline-block dark:bg-purple-800 dark:hover:bg-purple-600"
+        class="px-2 py-1 bg-purple-400 hover:bg-purple-500 border border-purple-500 text-white rounded-md hover:scale-105 duration-200 inline-block dark:bg-purple-800 dark:hover:bg-purple-600"
         href={source}>source code</a
       >
     </div>
