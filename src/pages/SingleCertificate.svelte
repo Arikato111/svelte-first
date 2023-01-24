@@ -5,12 +5,17 @@
   import ArrowIcon from "../components/icons/ArrowIcon.svelte";
   import MenuDropdown from "../components/MenuDropdown.svelte";
 
+  if(CertificatesData[0].id != 0) {
+    CertificatesData.reverse();
+  }
 
   export let id;
 
   if (!CertificatesData[id]) {
     window.history.back();
   }
+
+  console.log(CertificatesData[id]);
 </script>
 
 <svelte:window />
