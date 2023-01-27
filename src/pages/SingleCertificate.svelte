@@ -5,7 +5,7 @@
   import ArrowIcon from "../components/icons/ArrowIcon.svelte";
   import MenuDropdown from "../components/MenuDropdown.svelte";
 
-  if(CertificatesData[0].id != 0) {
+  if (CertificatesData[0].id != 0) {
     CertificatesData.reverse();
   }
 
@@ -31,14 +31,14 @@
         <ButtonContact Icon={ArrowIcon} title="back" />
       </Link>
     </div>
-    <MenuDropdown id={id} />
+    <MenuDropdown {id} />
   </div>
   <div class="text-center my-20 lg:my-0 print:m-0">
     <img
       id="certificate"
       title={CertificatesData[id].title}
       class="w-full inline-block lg:w-7/12 shadow-lg shadow-gray-400 print:shadow-none print:w-screen"
-      src={CertificatesData[id].img}
+      src={"/cer/" + CertificatesData[id].img}
       alt={CertificatesData[id].title}
     />
   </div>

@@ -3,42 +3,42 @@
         "id": 0,
         "type": "startup",
         "title": "basic startup crash course",
-        "img": "/cer/hakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg",
+        "img": "hakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg",
         "link": "https://hack1.hackathailand.com/courses/basic-startup-crash-course/"
     },
     {
         "id": 1,
         "type": "website development",
         "title": "intermediate web application development full stack",
-        "img": "/cer/hakata-Web-Application-Development-Full-Stack-Back-End-Developing-ระดับกลาง-HACKaTHAILAND_page-0001.jpg",
+        "img": "hakata-Web-Application-Development-Full-Stack-Back-End-Developing-ระดับกลาง-HACKaTHAILAND_page-0001.jpg",
         "link": "https://hack1.hackathailand.com/courses/intermediate-web-application-development-full-stack/"
     },
     {
         "id": 2,
         "type": "website development",
         "title": "basic web application development full stack",
-        "img": "/cer/hakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg",
+        "img": "hakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg",
         "link": "https://hack1.hackathailand.com/courses/basic-web-application-development-full-stack/"
     },
     {
         "id": 3,
         "type": "website design",
         "title": "basic web design figma",
-        "img": "/cer/hakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg",
+        "img": "hakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg",
         "link": "https://hack1.hackathailand.com/courses/basic-web-design-figma/"
     },
     {
         "id": 4,
         "type": "School Website Writing Competition",
         "title": "Provincial website writing competition",
-        "img": "/cer/compete-school-level1.jpg",
+        "img": "compete-school-level1.jpg",
         "link": "/files/competition.pdf"
     },
     {
         "id": 5,
         "type": "School Website Writing Competition",
         "title": "Regional website writing competition",
-        "img": "/cer/regional-website-writing-competition.jpg",
+        "img": "regional-website-writing-competition.jpg",
         "link": "/files/competition.pdf"
     }
 ]

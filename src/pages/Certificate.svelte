@@ -6,7 +6,7 @@
   import CertificateData from "../Data/CertificatesData.json";
   import ArrowIcon from "../components/icons/ArrowIcon.svelte";
 
-  if(CertificateData[0].id == 0) {
+  if (CertificateData[0].id == 0) {
     CertificateData.reverse();
   }
 </script>
@@ -26,7 +26,11 @@
   >
     {#each CertificateData as Cer}
       <Link to={`/certificates/${Cer.id}`}>
-        <CertificateShow src={Cer.img} alt={Cer.title} type={Cer.type} />
+        <CertificateShow
+          src={"/cer/low/" + Cer.img}
+          alt={Cer.title}
+          type={Cer.type}
+        />
       </Link>
     {/each}
   </div>
