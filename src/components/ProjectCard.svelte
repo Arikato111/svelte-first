@@ -7,10 +7,10 @@
 </script>
 
 <div
-  class="relative inline-block border-2 my-3 shadow-none border-purple-300 w-[320px] h-[350px] rounded-lg overflow-hidden sm:shadow-md shadow-zinc-400 dark:shadow-zinc-500 dark:bg-slate-800"
+  class="img-block relative inline-block border-2 my-3 shadow-none border-purple-300 w-[320px] h-[350px] rounded-lg overflow-hidden sm:shadow-md shadow-zinc-400 dark:shadow-zinc-500 dark:bg-slate-800"
 >
-  <div>
-    <img class="w-full h-[200px] object-cover" {src} alt="project images" />
+  <div class="overflow-hidden">
+    <img class="img-hover w-full h-[200px] duration-500 object-cover" {src} alt="project images" />
   </div>
   <h3
     class="text-xl py-1 text-zinc-800 dark:text-white"
@@ -33,3 +33,9 @@
     </div>
   </div>
 </div>
+
+<style>
+  .img-block:hover .img-hover {
+    transform: scale(1.20);
+  }
+</style>
