@@ -10,6 +10,8 @@
   import YoutubeIcon from "./components/icons/YoutubeIcon.svelte";
   import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
   import FileIcon from "./components/icons/FileIcon.svelte";
+  import CertificateData from './Data/CertificatesData.json'
+  import ProjectsData from './Data/ProjectsData.json'
 
   let url = "https://www.youtube.com/watch?v=4MHfWtH9MTM&t=25s";
 </script>
@@ -64,6 +66,13 @@
       <ButtonContact Icon={OnlyFansIcon} title="OnlyFans" />
     </a>
   </div>
+  <!-- load resources -->
+  {#each CertificateData as Cer}
+   <img class="hidden" src={'/cer/low/' + Cer.img} alt=""> 
+  {/each}
+  {#each ProjectsData as pj}
+    <img class="hidden" src={pj.img} alt="">    
+  {/each}
 </main>
 
 <style>
@@ -74,3 +83,4 @@
     content: "Nawasan ";
   }
 </style>
+ 
