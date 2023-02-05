@@ -25,6 +25,7 @@
     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 text-center"
   >
     {#each CertificateData as Cer}
+      <img class="hidden" src={ "/cer/" + Cer.img} alt="">
       <Link to={`/certificates/${Cer.id}`}>
         <CertificateShow
           src={"/cer/low/" + Cer.img}
