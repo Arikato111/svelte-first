@@ -14,8 +14,6 @@
   if (!CertificatesData[id]) {
     window.history.back();
   }
-
-  console.log(CertificatesData[id]);
 </script>
 
 <svelte:window />
