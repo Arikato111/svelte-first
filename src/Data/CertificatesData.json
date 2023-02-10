@@ -40,5 +40,12 @@
         "title": "Regional website writing competition",
         "img": "regional-website-writing-competition.jpg",
         "link": "/files/competition.pdf"
+    },
+    {
+        "id": 6,
+        "type": "startup",
+        "title": "intermediate startup crash course",
+        "img": "hakata-Startup-Crash-Course-Startup-Crash-Course-medium-HACKaTHAILAND.jpg",
+        "link": "https://hack1.hackathailand.com/courses/intermediate-startup-crash-course/"
     }
 ]
