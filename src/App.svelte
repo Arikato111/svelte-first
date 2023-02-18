@@ -1,5 +1,6 @@
 <script>
   import { Link } from "svelte-routing";
+  import { onMount } from "svelte";
   import "./App.css";
   import ButtonContact from "./components/ButtonContact.svelte";
   import ThreeWord from "./components/ThreeWord.svelte";
@@ -8,12 +9,35 @@
   import CertificateIcon from "./components/icons/CertificateIcon.svelte";
   import LinkedinIcon from "./components/icons/LinkedinIcon.svelte";
   import YoutubeIcon from "./components/icons/YoutubeIcon.svelte";
-  import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
+  import FlowerIcon from "./components/icons/FlowerIcon.svelte";
   import FileIcon from "./components/icons/FileIcon.svelte";
-  import CertificateData from './Data/CertificatesData.json'
-  import ProjectsData from './Data/ProjectsData.json'
+  import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
+  import CertificateData from "./Data/CertificatesData.json";
+  import ProjectsData from "./Data/ProjectsData.json";
+  import { pause, play, status } from "./components/PlaySound";
 
-  let url = "https://www.youtube.com/watch?v=4MHfWtH9MTM&t=25s";
+  let getStatusAudio = status()
+
+  let specialState = getStatusAudio;
+  let TheFlowerIcon = specialState ? FlowerIcon : OnlyFansIcon;
+  let flowerTitle = specialState ? "Spring" : "OnlyFans";
+  const onSpecial = () => {
+    if (!specialState) {
+      // @ts-ignore
+      let sakura = new Sakura("body");
+      play();
+      TheFlowerIcon = FlowerIcon;
+      flowerTitle = "Spring";
+    } else {
+      // @ts-ignore
+      let sakura = new Sakura("body");
+      sakura.stop();
+      pause();
+      TheFlowerIcon = OnlyFansIcon;
+      flowerTitle = "OnlyFans";
+    }
+    specialState = !specialState;
+  };
 </script>
 
 <svelte:head>
@@ -49,29 +73,29 @@
       <ButtonContact Icon={YoutubeIcon} title="Youtube" />
     </a>
     <a
-      href="https://onlyfans.com/Arikato111"
+      href="https://youtu.be/dHDNHIxmBNU"
       on:auxclick={(e) => {
         e.preventDefault();
-        window.open(url);
+        onSpecial();
       }}
       on:contextmenu={(e) => {
         e.preventDefault();
-        window.location.href = url;
+        onSpecial();
       }}
       on:click={(e) => {
         e.preventDefault();
-        window.location.href = url;
+        onSpecial();
       }}
     >
-      <ButtonContact Icon={OnlyFansIcon} title="OnlyFans" />
+      <ButtonContact Icon={TheFlowerIcon} title={flowerTitle} />
     </a>
   </div>
   <!-- load resources -->
   {#each CertificateData as Cer}
-   <img class="hidden" src={'/cer/low/' + Cer.img} alt=""> 
+    <img class="hidden" src={"/cer/low/" + Cer.img} alt="" />
   {/each}
   {#each ProjectsData as pj}
-    <img class="hidden" src={pj.img} alt="">    
+    <img class="hidden" src={pj.img} alt="" />
   {/each}
 </main>
 
@@ -83,4 +107,3 @@
     content: "Nawasan ";
   }
 </style>
- 
