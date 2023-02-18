@@ -6,8 +6,8 @@
 # <p align="center">Simple introduction</p>
 
 ## Get started 
-- `yarn`
-- `yarn dev`
+- `yarn` or `npm i` to install packages
+- `yarn dev` or `npm run dev` to run the website on dev mode
 
 ## Inside it
 
