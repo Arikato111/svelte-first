@@ -30,5 +30,13 @@
         "link": "https://life-coach-quotes.vercel.app",
         "img": "/projects/life-coach.png",
         "source": "https://github.com/Arikato111/life-coach-quotes"
+    },
+    {
+        "id": 4,
+        "title": "movie random react",
+        "descript": "รวมรายการภาพยนตร์สนุกๆ พร้อมกับการสุ่มเพื่อเลือกดูภาพยนตร์ รับรองคุณภาพและความสนุกเพราะดูมาแล้ว",
+        "link": "https://movie-random-react.vercel.app",
+        "img": "https://movie-random-react.vercel.app/example-page.png",
+        "source": "https://github.com/Arikato111/movie-random-react"
     }
 ]
