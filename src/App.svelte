@@ -1,6 +1,5 @@
 <script>
   import { Link } from "svelte-routing";
-  import { onMount } from "svelte";
   import "./App.css";
   import ButtonContact from "./components/ButtonContact.svelte";
   import ThreeWord from "./components/ThreeWord.svelte";
@@ -14,29 +13,28 @@
   import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
   import CertificateData from "./Data/CertificatesData.json";
   import ProjectsData from "./Data/ProjectsData.json";
-  import { pause, play, status } from "./components/PlaySound";
 
-  let getStatusAudio = status()
+  export let isFlowerFall = false;
+  export let changeFloerFall = () => {};
 
-  let specialState = getStatusAudio;
-  let TheFlowerIcon = specialState ? FlowerIcon : OnlyFansIcon;
-  let flowerTitle = specialState ? "Spring" : "OnlyFans";
+  let TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
+  let flowerTitle = isFlowerFall ? "Spring" : "OnlyFans";
   const onSpecial = () => {
-    if (!specialState) {
+    console.log(isFlowerFall);
+    isFlowerFall = !isFlowerFall
+    changeFloerFall();
+    if (isFlowerFall) {
       // @ts-ignore
       let sakura = new Sakura("body");
-      play();
       TheFlowerIcon = FlowerIcon;
       flowerTitle = "Spring";
     } else {
       // @ts-ignore
       let sakura = new Sakura("body");
       sakura.stop();
-      pause();
       TheFlowerIcon = OnlyFansIcon;
       flowerTitle = "OnlyFans";
     }
-    specialState = !specialState;
   };
 </script>
 
