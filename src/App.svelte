@@ -21,7 +21,7 @@
   let flowerTitle = isFlowerFall ? "Spring" : "OnlyFans";
   const onSpecial = () => {
     console.log(isFlowerFall);
-    isFlowerFall = !isFlowerFall
+    isFlowerFall = !isFlowerFall;
     changeFloerFall();
     if (isFlowerFall) {
       // @ts-ignore
@@ -46,14 +46,24 @@
   <div
     class="text-3xl sm:text-6xl text-slate-800 dark:text-slate-200 font-medium"
   >
-    Hello!, I'm <span class="text-purple-700 use-font font-bold changename"
-      ><span>Arikato111</span></span
-    ><span
-      class="inline-block hover:rotate-45 duration-300 ease-in-out transition"
-      >👋</span
-    >
+    {#if isFlowerFall}
+      私の名前は <span class="text-purple-700 use-font font-bold"
+        ><span>ナワサン。</span></span
+      ><span class="inline-block duration-300 ease-in-out transition">🌳</span>
+    {:else}
+      Hello!, I'm <span class="text-purple-700 use-font font-bold changename"
+        ><span>Arikato111</span></span
+      ><span
+        class="inline-block hover:rotate-45 duration-300 ease-in-out transition"
+        >👋</span
+      >
+    {/if}
   </div>
-  <ThreeWord />
+  {#if isFlowerFall}
+    <ThreeWord word1={"Love"} word2={"Relationship"} word3={"Memories"} />
+  {:else}
+    <ThreeWord />
+  {/if}
   <div class="sm:flex flex-wrap items-center justify-center">
     <a href="https://github.com/Arikato111">
       <ButtonContact title="Github" Icon={GithubIcon} />
