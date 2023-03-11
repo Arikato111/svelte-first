@@ -20,7 +20,6 @@
   let TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
   let flowerTitle = isFlowerFall ? "Spring" : "OnlyFans";
   const onSpecial = () => {
-    console.log(isFlowerFall);
     isFlowerFall = !isFlowerFall;
     changeFloerFall();
     if (isFlowerFall) {
