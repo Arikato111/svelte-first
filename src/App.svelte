@@ -83,7 +83,7 @@
       href="https://youtu.be/dHDNHIxmBNU"
       on:auxclick={(e) => {
         e.preventDefault();
-        onSpecial();
+        // onSpecial();
       }}
       on:contextmenu={(e) => {
         e.preventDefault();

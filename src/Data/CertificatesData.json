@@ -47,5 +47,12 @@
         "title": "intermediate startup crash course",
         "img": "hakata-Startup-Crash-Course-Startup-Crash-Course-medium-HACKaTHAILAND.jpg",
         "link": "https://hack1.hackathailand.com/courses/intermediate-startup-crash-course/"
+    },
+    {
+        "id": 7,
+        "type": "Regional website writing competition",
+        "title": "Build a reputation for the school",
+        "img": "NameAndSound.jpg",
+        "link": "/files/competition.pdf"
     }
 ]
