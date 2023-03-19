@@ -30,6 +30,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 text-center p-3 justify-items-center">
           {ProjectData.map((project) => (
             <ProjectCard
+              key={project.id}
               title={project.title}
               descript={project.descript}
               src={project.img}

@@ -87,11 +87,11 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
           </a>
         </div>
       </main>
-      {Certificates.map((cer) => (
-        <img className="hidden" src={"/cer/low/" + cer.img} alt="" />
+      {Certificates.map((cer, idx) => (
+        <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
       ))}
-      {Projects.map((pj) => (
-        <img className="hidden" src={pj.img} alt="" />
+      {Projects.map((pj, idx) => (
+        <img key={idx} className="hidden" src={pj.img} alt="" />
       ))}
     </>
   );
