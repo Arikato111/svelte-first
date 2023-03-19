@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+
+.use-font {
+  font-family: "Fuzzy Bubbles", cursive;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.changename:hover span {
+  display: none;
+}
+.changename:hover::before {
+  content: "Nawasan ";
+}
+
+@media print {
+  @page {
+    margin: 0;
+    padding: 0;
+    size: A4 landscape;
+  }
+  img {
+    height: 100vh;
+  }
+}
+
+ .img-block:hover .img-hover {
+    transform: scale(1.0);
+  }
