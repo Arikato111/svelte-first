@@ -16,7 +16,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   src,
 }) => {
   return (
-    <div className="img-block sm:scale-95 sm:hover:scale-100 duration-500 relative inline-block border-2 my-3 shadow-none border-purple-300 w-[320px] h-[350px] rounded-lg overflow-hidden sm:shadow-md shadow-zinc-400 dark:shadow-zinc-500 dark:bg-slate-800">
+    <div className="img-block sm:scale-95 sm:hover:scale-100 duration-500 relative inline-block border-2 my-3 shadow-none border-purple-300 w-[320px] h-[350px] rounded overflow-hidden sm:shadow-md shadow-zinc-400 dark:shadow-zinc-500 dark:bg-slate-800">
       <div className="overflow-hidden">
         <img
           className="img-hover sm:scale-125 w-full h-[200px] duration-500 object-cover"

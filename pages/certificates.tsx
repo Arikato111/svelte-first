@@ -34,13 +34,15 @@ export default function Certificates() {
           {CertificateData.map((Cer) => (
             <>
               <img className="hidden" src={"/cer/" + Cer.img} alt="" />
-              <Link href={`/certificates/${Cer.id}`}>
-                <CertificateShow
-                  src={"/cer/low/" + Cer.img}
-                  alt={Cer.title}
-                  type={Cer.type}
-                />
-              </Link>
+              <div>
+                <Link href={`/certificates/${Cer.id}`}>
+                  <CertificateShow
+                    src={"/cer/low/" + Cer.img}
+                    alt={Cer.title}
+                    type={Cer.type}
+                  />
+                </Link>
+              </div>
             </>
           ))}
         </div>
