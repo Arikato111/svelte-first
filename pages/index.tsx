@@ -13,6 +13,7 @@ import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
 import Projects from "../Data/ProjectsData.json";
 import MetaTag from "@/components/MetaTag";
+import { MouseEvent } from "react";
 
 type HomeProps = {
   isFlowerFall: boolean;
@@ -32,6 +33,12 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
       // @ts-ignore
       let sakura = new Sakura("body");
     }
+  };
+
+  const evenClickThatButton = (e: MouseEvent) => {
+    e.preventDefault();
+    if (!confirm("Are ou sure?")) return;
+    onSpecial();
   };
 
   return (
@@ -69,19 +76,14 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
             <ButtonContact Icon={YoutubeIcon} title="Youtube" />
           </a>
           <a
-            href="https://youtu.be/dHDNHIxmBNU"
+            href="/redirect?link=149afd631693c895f81e508eb5aaef37"
             onAuxClick={(e) => {
               e.preventDefault();
               // onSpecial();
             }}
-            onContextMenu={(e) => {
-              e.preventDefault();
-              onSpecial();
-            }}
-            onClick={(e) => {
-              e.preventDefault();
-              onSpecial();
-            }}
+            onContextMenu={evenClickThatButton}
+            onMouseDown={evenClickThatButton}
+            onClick={evenClickThatButton}
           >
             <ButtonContact Icon={TheFlowerIcon} title={flowerTitle} />
           </a>
