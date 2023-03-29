@@ -7,7 +7,7 @@ type CertificateShowProps = {
 }
 const CertificateShow: FC<CertificateShowProps> = ({ src, alt, type }) => {
     return <div className="m-10 inline-block">
-        <span className="dark:text-slate-200 font-bold">{type}</span>
+        <div className="dark:text-slate-200 font-bold">{type}</div>
         {/* <Atropos
             class="my-atropos shadow-lg hover:shadow-none  hidden shadow-slate-400 dark:shadow-slate-600  lg:inline-block lg:hover:scale-125 transition-all duration-500"
         >

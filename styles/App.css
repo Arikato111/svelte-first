@@ -29,6 +29,6 @@
   }
 }
 
- .img-block:hover .img-hover {
-    transform: scale(1.0);
-  }
+.img-block:hover .img-hover {
+  transform: scale(1);
+}
