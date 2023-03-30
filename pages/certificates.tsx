@@ -8,11 +8,7 @@ import Head from "next/head";
 import MetaTag from "@/components/MetaTag";
 
 export default function Certificates() {
-  useEffect(() => {
-    if (CertificateData[0].id == 0) {
-      CertificateData.reverse();
-    }
-  }, []);
+  
   return (
     <>
       <Head>
