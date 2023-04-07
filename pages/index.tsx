@@ -21,7 +21,7 @@ type HomeProps = {
 };
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   const TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
-  const flowerTitle = isFlowerFall ? "spring" : "OnlyFans";
+  const flowerTitle = isFlowerFall ? "at spring" : "OnlyFans";
 
   const onSpecial = () => {
     changeFlowerFall();
@@ -37,7 +37,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
 
   const evenClickThatButton = (e: MouseEvent) => {
     e.preventDefault();
-    if (!confirm("Are ou sure?")) return;
+    // if (!confirm("Are ou sure?")) return;
     onSpecial();
   };
 
@@ -52,7 +52,10 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
         />
         <title>Arikato111</title>
       </Head>
-      <main className="main-flex">
+      <main className={`main-flex ${isFlowerFall ? "bg-transparent" : ""}`}>
+        {isFlowerFall && (
+          <div className="absolute -z-20 w-screen h-screen bg-cover opacity-80 bg-beautiful dark:hidden"></div>
+        )}
         <Banner isSwiching={isFlowerFall} />
         {isFlowerFall ? (
           <ThreeWord word1="Love" word2="Relationship" word3="Memories" />
@@ -82,7 +85,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
               // onSpecial();
             }}
             onContextMenu={evenClickThatButton}
-            onMouseDown={evenClickThatButton}
+            onMouseDown={(e)=> e.preventDefault()}
             onClick={evenClickThatButton}
           >
             <ButtonContact Icon={TheFlowerIcon} title={flowerTitle} />

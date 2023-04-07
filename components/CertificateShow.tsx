@@ -20,7 +20,7 @@ const CertificateShow: FC<CertificateShowProps> = ({ src, alt, type }) => {
         </Atropos> */}
         <div className="inline-block lg:hover:scale-y-105 transition-all duration-500">
             <img
-                className="w-80 shadow-lg shadow-slate-400 dark:shadow-slate-600   rounded-lg border-2 border-purple-400"
+                className="w-80 shadow-lg shadow-slate-400 dark:shadow-slate-600   rounded border-2 border-purple-400"
                 src={src}
                 alt={alt}
                 title={alt}

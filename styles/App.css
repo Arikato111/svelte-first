@@ -15,6 +15,12 @@
   content: "Nawasan ";
 }
 
+.bg-beautiful {
+  background-image: url("/bg2.jpg");
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+}
+
 @media print {
   @page {
     margin: 0;
