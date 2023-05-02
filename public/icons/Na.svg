@@ -1,5 +1,5 @@
 <svg height="100%" stroke-miterlimit="10"
-    style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1"
+    style="fillRule:nonzero;clipRule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1"
     viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
     xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -9,7 +9,7 @@
     </defs>
     <g id="Layer-1" vectornator:layerName="Layer 1">
         <path d="M24.0198 25.916L1002.2 25.916L1002.2 998.354L24.0198 998.354L24.0198 25.916Z" fill="#7e22ce"
-            fill-rule="nonzero" opacity="1" stroke="#54d0ff" stroke-linecap="butt" stroke-linejoin="round"
+            fillRule="nonzero" opacity="1" stroke="#54d0ff" stroke-linecap="butt" stroke-linejoin="round"
             stroke-width="10" />
         <g fill="#ffffff" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round"
             stroke-width="12.7023">

@@ -9,6 +9,7 @@ import YoutubeSong from "@/components/YoutubeSong";
 import { checkTheme } from "@/components/CheckMode";
 import ToggleMode from "@/components/ToggleMode";
 import CertificateData from "../Data/CertificatesData.json";
+import { decryptText as dt } from "../components/lib";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isFlowerFall, setIsFlowerFall] = useState(false);
@@ -23,7 +24,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     checkTheme();
-    setAudio(new Audio("/special.mp3"));
+    let link =
+      "iuuqt;00xxx/bozujpo/dpn0x" +
+      "q.dpoufou0vqmpbet03134016" +
+      "025:bge7427:4d9:6g92f619f" +
+      "c6bbfg48/nq4";
+    setAudio(new Audio(dt(link)));
     setIsMobile(!!window.navigator.userAgent.match(/Mobile/));
   }, []);
 

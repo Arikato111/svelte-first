@@ -67,16 +67,16 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
             <ButtonContact title="Github" Icon={GithubIcon} />
           </a>
           <Link href={"/certificates"}>
-            <ButtonContact title="Certificates" Icon={CertificateIcon} />
+            <ButtonContact Class="mobile-size" title="Certificates" Icon={CertificateIcon} />
           </Link>
           <Link href={"/projects"}>
-            <ButtonContact title="Projects" Icon={FileIcon} />
+            <ButtonContact Class="mobile-size" title="Projects" Icon={FileIcon} />
           </Link>
           <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
-            <ButtonContact title="Linkedin" Icon={LinkedinIcon} />
+            <ButtonContact Class="mobile-size" title="Linkedin" Icon={LinkedinIcon} />
           </a>
           <a href="https://youtube.com/@Arikato111">
-            <ButtonContact Icon={YoutubeIcon} title="Youtube" />
+            <ButtonContact Class="mobile-size" Icon={YoutubeIcon} title="Youtube" />
           </a>
           <a
             href="/redirect?link=149afd631693c895f81e508eb5aaef37"
@@ -88,7 +88,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
             onMouseDown={(e)=> e.preventDefault()}
             onClick={evenClickThatButton}
           >
-            <ButtonContact Icon={TheFlowerIcon} title={flowerTitle} />
+            <ButtonContact Class="mobile-size" Icon={TheFlowerIcon} title={flowerTitle} />
           </a>
         </div>
       </main>
