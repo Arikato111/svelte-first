@@ -21,7 +21,7 @@ type HomeProps = {
 };
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   const TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
-  const flowerTitle = isFlowerFall ? "at spring" : "OnlyFans";
+  const flowerTitle = isFlowerFall ? "in the spring" : "OnlyFans";
 
   const onSpecial = () => {
     changeFlowerFall();
@@ -91,6 +91,9 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
             <ButtonContact Class="mobile-size" Icon={TheFlowerIcon} title={flowerTitle} />
           </a>
         </div>
+        {isFlowerFall && (
+          <div className="absolute bottom-0 text-pink-200">2017/11/23</div>
+        )}
       </main>
       {Certificates.map((cer, idx) => (
         <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
