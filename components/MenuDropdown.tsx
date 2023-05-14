@@ -17,11 +17,24 @@ const MenuDropdown: FC<CertificateType> = ({ link }) => {
           <ButtonContact Icon={MenuIcon} title="" />
         </div>
 
-        <div className={`absolute z-10 duration-200 ${isShow ? "" : "hidden"}`}>
+        <div
+          className={`absolute z-10 duration-300 ${
+            isShow ? "" : "h-0 overflow-hidden"
+          }`}
+        >
           <div className="grid-cols-2">
             <button onClick={() => print()}>
               <ButtonContact Icon={PrinterIcon} title="Print" />
             </button>
+            <a target="_blank" rel="noreferrer" href={link}>
+              <ButtonContact Icon={BookIcon} title="link" />
+            </a>
+            <a target="_blank" rel="noreferrer" href={link}>
+              <ButtonContact Icon={BookIcon} title="link" />
+            </a>
+            <a target="_blank" rel="noreferrer" href={link}>
+              <ButtonContact Icon={BookIcon} title="link" />
+            </a>
             <a target="_blank" rel="noreferrer" href={link}>
               <ButtonContact Icon={BookIcon} title="link" />
             </a>
