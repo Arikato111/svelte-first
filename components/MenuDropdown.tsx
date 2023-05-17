@@ -29,15 +29,6 @@ const MenuDropdown: FC<CertificateType> = ({ link }) => {
             <a target="_blank" rel="noreferrer" href={link}>
               <ButtonContact Icon={BookIcon} title="link" />
             </a>
-            <a target="_blank" rel="noreferrer" href={link}>
-              <ButtonContact Icon={BookIcon} title="link" />
-            </a>
-            <a target="_blank" rel="noreferrer" href={link}>
-              <ButtonContact Icon={BookIcon} title="link" />
-            </a>
-            <a target="_blank" rel="noreferrer" href={link}>
-              <ButtonContact Icon={BookIcon} title="link" />
-            </a>
           </div>
         </div>
       </div>
