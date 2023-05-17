@@ -92,7 +92,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
           </a>
         </div>
         {isFlowerFall && (
-          <div className="absolute bottom-0 text-pink-200">2017/11/23</div>
+          <div className="fixed bottom-0 text-pink-200">2017/11/23</div>
         )}
       </main>
       {Certificates.map((cer, idx) => (
