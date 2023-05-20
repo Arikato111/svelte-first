@@ -16,6 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [isMobile, setIsMobile] = useState(true);
 
+  const AppComponent = Component as any;
+
   useEffect(() => {
     if (CertificateData[0].id == 0) {
       CertificateData.reverse();
@@ -48,7 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <ToggleMode />
       {isFlowerFall && !isMobile && <YoutubeSong />}
-      <Component
+      <AppComponent
         {...pageProps}
         isFlowerFall={isFlowerFall}
         changeFlowerFall={changeFlowerFall}
