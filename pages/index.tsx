@@ -14,6 +14,7 @@ import Certificates from "../Data/CertificatesData.json";
 import Projects from "../Data/ProjectsData.json";
 import MetaTag from "@/components/MetaTag";
 import { MouseEvent } from "react";
+import { decryptText } from "@/components/lib";
 
 type HomeProps = {
   isFlowerFall: boolean;
@@ -22,6 +23,9 @@ type HomeProps = {
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   const TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
   const flowerTitle = isFlowerFall ? "in the spring" : "OnlyFans";
+
+  const message =
+    "Xibu!jg!po!uif!34se!pg!Opwfncfs!3128!J!tbx!uibu!npwjf@!Xjmm!bmm!pg!uijt!dibohf@!Xjmm!uif!qbui!J!dipptf!tujmm!uif!tbnf@!Xjmm!J!tujmm!cf!xip!J!bn@!Xjmm!uif!jnqpsubou!uijoht!tujmm!fyjtu@!Xjmm!J!tujmm!gffm!tbe!bcpvu!uibu!tpoh@!Xjmm!uibu!tupsz!tujmm!nfbo!up!nf@!Xjmm!J!tujmm!cf!bcmf!up!nffu!uibu!qfstpo!ps!opu@";
 
   const onSpecial = () => {
     changeFlowerFall();
@@ -67,16 +71,32 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
             <ButtonContact title="Github" Icon={GithubIcon} />
           </a>
           <Link href={"/certificates"}>
-            <ButtonContact Class="mobile-size" title="Certificates" Icon={CertificateIcon} />
+            <ButtonContact
+              Class="mobile-size"
+              title="Certificates"
+              Icon={CertificateIcon}
+            />
           </Link>
           <Link href={"/projects"}>
-            <ButtonContact Class="mobile-size" title="Projects" Icon={FileIcon} />
+            <ButtonContact
+              Class="mobile-size"
+              title="Projects"
+              Icon={FileIcon}
+            />
           </Link>
           <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
-            <ButtonContact Class="mobile-size" title="Linkedin" Icon={LinkedinIcon} />
+            <ButtonContact
+              Class="mobile-size"
+              title="Linkedin"
+              Icon={LinkedinIcon}
+            />
           </a>
           <a href="https://youtube.com/@Arikato111">
-            <ButtonContact Class="mobile-size" Icon={YoutubeIcon} title="Youtube" />
+            <ButtonContact
+              Class="mobile-size"
+              Icon={YoutubeIcon}
+              title="Youtube"
+            />
           </a>
           <a
             href="/redirect?link=149afd631693c895f81e508eb5aaef37"
@@ -85,14 +105,22 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
               // onSpecial();
             }}
             onContextMenu={evenClickThatButton}
-            onMouseDown={(e)=> e.preventDefault()}
+            onMouseDown={(e) => e.preventDefault()}
             onClick={evenClickThatButton}
           >
-            <ButtonContact Class="mobile-size" Icon={TheFlowerIcon} title={flowerTitle} />
+            <ButtonContact
+              Class="mobile-size"
+              Icon={TheFlowerIcon}
+              title={flowerTitle}
+            />
           </a>
         </div>
-        {isFlowerFall && (
-          <div className="fixed bottom-0 text-pink-200">2017/11/23</div>
+        {isFlowerFall && Math.floor(Math.random() * 10) === 5 && (
+          <div className="hidden lg:block fixed bottom-0 text-pink-200 w-full">
+            <div className="marquee">
+              <p>{decryptText(message)}</p>
+            </div>
+          </div>
         )}
       </main>
       {Certificates.map((cer, idx) => (
