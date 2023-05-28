@@ -90,12 +90,12 @@
 }
 
 .preview { 
-  animation: first_preview 1s;
+  animation: first_preview .7s;
 }
 
 @keyframes first_preview {
   from {
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
   to {
     transform: scale(1);

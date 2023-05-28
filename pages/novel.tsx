@@ -4,13 +4,13 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import ArrowIcon from "@/components/icons/ArrowIcon";
-import ButtonContact from "@/components/ButtonContact";
 
 export default function Novel() {
   const router = useRouter();
   const { anime } = router.query;
   const delayCount = anime === "false" ? 0 : 50;
   const Mark = "\n\t";
+
   const Opening = `ท่ามกลางบรรยากาศที่มืดครึ้มและปกคลุมไปด้วยเมฆสีดำทมิฬที่ไม่มีแม้แสงลอดผ่าน แม้จะเป็นช่วงที่ใกล้จะแปดโมงเต็มที่แล้ว แต่บรรยากาศก็แทบไม่ต่างจากต้อนกลางคืนเท่าไหร่ ผมนั่งอยู่ที่ม้านั่งตัวหนึ่ง ภายใต้ศาลาหลังเล็กที่ตั้งโดดอยู่เพียงตัวเดียวในระแวก มีต้นไม้ใหญ่สองสามต้นปกคลุมไว้ เป็นสถานที่ๆ เงียบสงบและแทบไม่มีผู้คนเดินผ่าน 
   ${Mark}จะว่าผมคอยใครอยู่หรือไม่ คงไม่ใช่ ไม่ใช่อีกแล้วในตอนนี้ แต่หากเป็นเมื่อก่อนละก็ ผมคงจะนั่งรอใครสักคนอยู่ตรงนี้ นั่งรอเธอคนที่ชอบกินเครื่องในเป็นชีวิตจิตใจ เธอคนที่ชอบหัวเราะให้กับเรื่องไม่เป็นเรื่อง เธอคนที่มักจะยิ้มแย้มอยู่เสมอ เธอคนนั้นชอบมานั่งเล่นที่ศาลานี้อยู่เป็นประจำด้วยเหตุผลที่ว่าเงียบสงบดี 
   ${Mark}คงเพราะอยากเจอเธออีกสักครั้งผมจึงมานั่งอยู่ตรงนี้ แต่หากพูดตามสถานการความเป็นจริงแล้วคงจะไม่มีทางเกิดขึ้นได้อีก เป็นเรื่องจริงที่ว่าผมจะไม่มีทางได้เจอเธอ เหตุผลจริงๆ ที่ผมมานั่งอยู่ที่นี่อาจจะเป็นเพียงเพราะว่ามันเงียบสงบดี 
@@ -41,12 +41,25 @@ export default function Novel() {
           image="https://arikato111.vercel.app/example-page.png"
           url="https://arikato111.vercel.app"
         />
-        <title>novel</title>
+        <title>Novel | Arikato111 </title>
       </Head>
       <main className="main bg-yellow-100/40">
         <div className="inline-block">
           <Link href="/">
-            <ButtonContact Class="bg-pink-300 hover:scale-100 hover:bg-pink-300/90 hover:shadow-pink-100 border-pink-100" Icon={ArrowIcon} title="back" />
+            <div
+              className={`bg-pink-300 hover:scale-100 hover:bg-pink-300/90 
+          hover:shadow-pink-100 border-pink-100 duration-300
+          dark:bg-slate-900 text-white dark:text-slate-200
+          fill-white  dark:fill-slate-200 flex justify-center 
+            items-center rounded-lg border-2 py-1 px-3 font-medium
+          dark:border-slate-200 dark:hover:bg-gray-700 m-1 
+            shadow-md hover:shadow-lg shadow-gray-300 dark:shadow-none`}
+            >
+              <span className="inline-block w-8 mx-1">
+                <ArrowIcon />
+              </span>
+              <span>back</span>
+            </div>
           </Link>
         </div>
 
