@@ -60,68 +60,70 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
         {isFlowerFall && (
           <div className="absolute -z-20 w-screen h-screen bg-cover opacity-80 bg-beautiful dark:hidden"></div>
         )}
-        <Banner isSwiching={isFlowerFall} />
-        {isFlowerFall ? (
-          <ThreeWord word1="Love" word2="Relationship" word3="Memories" />
-        ) : (
-          <ThreeWord word1="Learning" word2="Creating" word3="Development" />
-        )}
-        <div className="sm:flex flex-wrap items-center justify-center">
-          <a href="https://github.com/Arikato111">
-            <ButtonContact title="Github" Icon={GithubIcon} />
-          </a>
-          <Link href={"/certificates"}>
-            <ButtonContact
-              Class="mobile-size"
-              title="Certificates"
-              Icon={CertificateIcon}
-            />
-          </Link>
-          <Link href={"/projects"}>
-            <ButtonContact
-              Class="mobile-size"
-              title="Projects"
-              Icon={FileIcon}
-            />
-          </Link>
-          <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
-            <ButtonContact
-              Class="mobile-size"
-              title="Linkedin"
-              Icon={LinkedinIcon}
-            />
-          </a>
-          <a href="https://youtube.com/@Arikato111">
-            <ButtonContact
-              Class="mobile-size"
-              Icon={YoutubeIcon}
-              title="Youtube"
-            />
-          </a>
-          <a
-            href="/redirect?link=149afd631693c895f81e508eb5aaef37"
-            onAuxClick={(e) => {
-              e.preventDefault();
-              // onSpecial();
-            }}
-            onContextMenu={evenClickThatButton}
-            onMouseDown={(e) => e.preventDefault()}
-            onClick={evenClickThatButton}
-          >
-            <ButtonContact
-              Class="mobile-size"
-              Icon={TheFlowerIcon}
-              title={flowerTitle}
-            />
-          </a>
-        </div>
-        {isFlowerFall && Math.floor(Math.random() * 10) === 5 && (
-          <div className="hidden lg:block fixed bottom-0 text-pink-200 w-full">
-            <div className="marquee">
-              <p>{decryptText(message)}</p>
-            </div>
+        <div className="preview">
+          <Banner isSwiching={isFlowerFall} />
+          {isFlowerFall ? (
+            <ThreeWord word1="Love" word2="Relationship" word3="Memories" />
+          ) : (
+            <ThreeWord word1="Learning" word2="Creating" word3="Development" />
+          )}
+          <div className="sm:flex flex-wrap items-center justify-center">
+            <a href="https://github.com/Arikato111">
+              <ButtonContact title="Github" Icon={GithubIcon} />
+            </a>
+            <Link href={"/certificates"}>
+              <ButtonContact
+                Class="mobile-size"
+                title="Certificates"
+                Icon={CertificateIcon}
+              />
+            </Link>
+            <Link href={"/projects"}>
+              <ButtonContact
+                Class="mobile-size"
+                title="Projects"
+                Icon={FileIcon}
+              />
+            </Link>
+            <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
+              <ButtonContact
+                Class="mobile-size"
+                title="Linkedin"
+                Icon={LinkedinIcon}
+              />
+            </a>
+            <a href="https://youtube.com/@Arikato111">
+              <ButtonContact
+                Class="mobile-size"
+                Icon={YoutubeIcon}
+                title="Youtube"
+              />
+            </a>
+            <a
+              href="/redirect?link=149afd631693c895f81e508eb5aaef37"
+              onAuxClick={(e) => {
+                e.preventDefault();
+                // onSpecial();
+              }}
+              onContextMenu={evenClickThatButton}
+              onMouseDown={(e) => e.preventDefault()}
+              onClick={evenClickThatButton}
+            >
+              <ButtonContact
+                Class="mobile-size"
+                Icon={TheFlowerIcon}
+                title={flowerTitle}
+              />
+            </a>
           </div>
-        )}
+          {isFlowerFall && Math.floor(Math.random() * 10) === 5 && (
+            <div className="hidden lg:block fixed bottom-0 text-pink-200 w-full">
+              <div className="marquee">
+                <p>{decryptText(message)}</p>
+              </div>
+            </div>
+          )}
+        </div>
       </main>
       {Certificates.map((cer, idx) => (
         <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />

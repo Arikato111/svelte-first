@@ -6,7 +6,7 @@ type BannerProps = {
 }
 
 const Banner: FC<BannerProps> = ({ isSwiching }) => {
-    return <div className='text-3xl sm:text-6xl text-slate-800 dark:text-slate-200 font-medium'>
+    return <div className='text-3xl text-center sm:text-6xl text-slate-800 dark:text-slate-200 font-medium'>
         {isSwiching ?
             (<>
                 ぼくの名前は <span className="text-purple-700 use-font font-bold"
