@@ -3,7 +3,6 @@ import ButtonContact from "@/components/ButtonContact";
 import ArrowIcon from "@/components/icons/ArrowIcon";
 import CertificateData from "../Data/CertificatesData.json";
 import CertificateShow from "@/components/CertificateShow";
-import { useEffect } from "react";
 import Head from "next/head";
 import MetaTag from "@/components/MetaTag";
 
