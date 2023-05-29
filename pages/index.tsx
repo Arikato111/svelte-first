@@ -69,7 +69,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
           )}
           <div className="sm:flex flex-wrap items-center justify-center">
             <a href="https://github.com/Arikato111">
-              <ButtonContact title="Github" Icon={GithubIcon} />
+              <ButtonContact Class="mobile-size" title="Github" Icon={GithubIcon} />
             </a>
             <Link href={"/certificates"}>
               <ButtonContact
