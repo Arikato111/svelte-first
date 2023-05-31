@@ -60,7 +60,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
         {isFlowerFall && (
           <div className="absolute -z-20 w-screen h-screen bg-cover opacity-80 bg-beautiful dark:hidden"></div>
         )}
-        <div className="preview">
+        <div className="preview flex flex-col items-center">
           <Banner isSwiching={isFlowerFall} />
           {isFlowerFall ? (
             <ThreeWord word1="Love" word2="Relationship" word3="Memories" />
