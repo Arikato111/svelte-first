@@ -38,5 +38,13 @@
         "link": "https://movie-random-react.vercel.app",
         "img": "https://movie-random-react.vercel.app/example-page.png",
         "source": "https://github.com/Arikato111/movie-random-react"
+    },
+    {
+        "id": 5,
+        "title": "next food random",
+        "descript": "คิดไม่ออกจะกินอะไรดี งั้นไม่ต้องคิด สุ่มเอา รับเมนูอาหารจากการสุ่ม พร้อมรูปภาพ สูตรวิธีการทำ",
+        "link": "https://next-food-random.vercel.app",
+        "img": "https://next-food-random.vercel.app/example-page.png",
+        "source": "https://github.com/Arikato111/next-food-random"
     }
 ]
