@@ -96,7 +96,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       faculty: "Science",
       major: "information and communication technology",
     },
-    skils: {
+    skills: {
       languages,
       tools,
     },
