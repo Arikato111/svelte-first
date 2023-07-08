@@ -11,7 +11,6 @@ import ThreeWord from "@/components/ThreeWord";
 import Head from "next/head";
 import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
-import Projects from "../Data/ProjectsData.json";
 import MetaTag from "@/components/MetaTag";
 import { MouseEvent } from "react";
 import { decryptText } from "@/components/lib";
@@ -128,9 +127,6 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
       {Certificates.map((cer, idx) => (
         <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
       ))}
-      {Projects.map((pj, idx) => (
-        <img key={idx} className="hidden" src={pj.img} alt="" />
-      ))}
-    </>
+   </>
   );
 }
