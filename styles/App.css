@@ -43,9 +43,7 @@
   transition: 1s;
   height: 35px;
 }
-.img-block:hover .img-hover {
-  transform: scale(1);
-}
+
 .descript-hide {
   height: 200px;
   transition: 1s;
@@ -59,6 +57,7 @@
 
 .img-block:hover .img-hover {
   height: 200px;
+  transform: scale(1);
   transition: 1s;
 }
 .img-hover {
