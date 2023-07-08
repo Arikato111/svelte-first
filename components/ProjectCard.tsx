@@ -21,7 +21,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <div className=" shadow-none border-purple-500 rounded-lg overflow-hidden">
           <div className="overflow-hidden">
             <img
-              className="img-hover sm:scale-125 w-full duration-500 object-cover"
+              className="img-hover sm:scale-125 w-full object-cover"
               src={src}
               alt="project images"
             />
