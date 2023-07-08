@@ -34,9 +34,47 @@
     height: 100vh;
   }
 }
-
+.text-heading {
+  height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+.img-block:hover .text-heading {
+  transition: 1s;
+  height: 35px;
+}
 .img-block:hover .img-hover {
   transform: scale(1);
+}
+.descript-hide {
+  height: 200px;
+  transition: 1s;
+}
+.img-block:hover .descript-hide {
+  padding: 0;
+  height: 0px;
+  transition: 1s;
+  border-color: transparent;
+}
+
+.img-block:hover .img-hover {
+  height: 200px;
+  transition: 1s;
+}
+.img-hover {
+  transition: 1s;
+  height: 0;
+}
+
+.img-block:hover .link-contact {
+  visibility: visible;
+  height: 35px;
+  transition: 1s;
+}
+.link-contact {
+  visibility: hidden;
+  height: 0;
+  transition: 1s;
 }
 
 .marquee {
@@ -89,8 +127,8 @@
   }
 }
 
-.preview { 
-  animation: first_preview .7s;
+.preview {
+  animation: first_preview 0.7s;
 }
 
 @keyframes first_preview {

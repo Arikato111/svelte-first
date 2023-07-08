@@ -5,7 +5,7 @@ export function checkTheme() {
   } else {
     let date = new Date();
     let dateHour = date.getHours();
-    if (dateHour > 17 || dateHour < 6) {
+    if (dateHour > 21 || dateHour < 6) {
       document.documentElement.classList.add("dark");
     }
   }

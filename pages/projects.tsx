@@ -39,6 +39,7 @@ export default function Projects() {
             />
           ))}
         </div>
+        <br />
       </main>
     </>
   );
