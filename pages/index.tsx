@@ -84,7 +84,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
                 Icon={FileIcon}
               />
             </Link>
-            <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
+            <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon/">
               <ButtonContact
                 Class="mobile-size"
                 title="Linkedin"

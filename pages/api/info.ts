@@ -88,7 +88,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     name: "Nawasan Wisitsingkhon",
     contact: {
       github: "https://github.com/Arikato111",
-      linkedin: "https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/",
+      linkedin: "https://www.linkedin.com/in/nawasan-wisitsingkhon/",
       youtube: "https://youtube.com/@Arikato111",
     },
     education: {
