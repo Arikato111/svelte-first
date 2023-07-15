@@ -13,7 +13,6 @@ import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
 import MetaTag from "@/components/MetaTag";
 import { MouseEvent } from "react";
-import { decryptText } from "@/components/lib";
 
 type HomeProps = {
   isFlowerFall: boolean;
@@ -22,9 +21,6 @@ type HomeProps = {
 export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   const TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
   const flowerTitle = isFlowerFall ? "in the spring" : "OnlyFans";
-
-  const message =
-    "Xibu!jg!po!uif!34se!pg!Opwfncfs!3128!J!tbx!uibu!npwjf@!Xjmm!bmm!pg!uijt!dibohf@!Xjmm!uif!qbui!J!dipptf!tujmm!uif!tbnf@!Xjmm!J!tujmm!cf!xip!J!bn@!Xjmm!uif!jnqpsubou!uijoht!tujmm!fyjtu@!Xjmm!J!tujmm!gffm!tbe!bcpvu!uibu!tpoh@!Xjmm!uibu!tupsz!tujmm!nfbo!up!nf@!Xjmm!J!tujmm!cf!bcmf!up!nffu!uibu!qfstpo!ps!opu@";
 
   const onSpecial = () => {
     changeFlowerFall();
@@ -68,7 +64,11 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
           )}
           <div className="sm:flex flex-wrap items-center justify-center">
             <a href="https://github.com/Arikato111">
-              <ButtonContact Class="mobile-size" title="Github" Icon={GithubIcon} />
+              <ButtonContact
+                Class="mobile-size"
+                title="Github"
+                Icon={GithubIcon}
+              />
             </a>
             <Link href={"/certificates"}>
               <ButtonContact
@@ -115,18 +115,11 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
               />
             </a>
           </div>
-          {isFlowerFall && Math.floor(Math.random() * 10) === 5 && (
-            <div className="hidden lg:block fixed bottom-0 text-pink-200 w-full">
-              <div className="marquee">
-                <p>{decryptText(message)}</p>
-              </div>
-            </div>
-          )}
         </div>
       </main>
       {Certificates.map((cer, idx) => (
         <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
       ))}
-   </>
+    </>
   );
 }
