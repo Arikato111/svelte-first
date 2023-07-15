@@ -34,14 +34,18 @@
     height: 100vh;
   }
 }
-.text-heading {
-  height: 0;
-  transition: 1s;
-  overflow: hidden;
-}
+
 .img-block:hover .text-heading {
   transition: 1s;
   height: 35px;
+}
+
+.img-hover {
+  transition: 1s;
+}
+.img-block:hover .img-hover {
+  transform: scale(1);
+  transition: 1s;
 }
 
 .descript-hide {
@@ -55,24 +59,12 @@
   border-color: transparent;
 }
 
-.img-block:hover .img-hover {
-  height: 200px;
-  transform: scale(1);
-  transition: 1s;
-}
-.img-hover {
-  transition: 1s;
-  height: 0;
-}
-
 .img-block:hover .link-contact {
   visibility: visible;
   height: 35px;
   transition: 1s;
 }
 .link-contact {
-  visibility: hidden;
-  height: 0;
   transition: 1s;
 }
 
