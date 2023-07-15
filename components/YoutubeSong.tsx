@@ -7,7 +7,8 @@ const YoutubeSong: FC = () => {
     "5Z3kPL_UAys", // pancreas
     "5Z3kPL_UAys", // kyoubyou bunko
 
-    "KFvVslApCPc", // Fanfare - Shunkashuto
+    "VaFRVg7iktU", // your lie in april
+    "NOMkHGnDPsc", // again - your lie in april
 
     "4uOHQ7mO-Kk", // Last Scene - Ikimono Gakari
     "Hy9s13hWsoc", // Orange - seven oops

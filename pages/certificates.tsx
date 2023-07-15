@@ -26,8 +26,8 @@ export default function Certificates() {
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 text-center">
-          {CertificateData.map((Cer) => (
-            <>
+          {CertificateData.map((Cer, idx) => (
+            <div key={idx}>
               <img className="hidden" src={"/cer/" + Cer.img} alt="" />
               <div>
                 <Link href={`/certificates/${Cer.id}`}>
@@ -38,7 +38,7 @@ export default function Certificates() {
                   />
                 </Link>
               </div>
-            </>
+            </div>
           ))}
         </div>
       </main>
