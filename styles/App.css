@@ -44,28 +44,16 @@
   transition: 1s;
 }
 .img-block:hover .img-hover {
-  transform: scale(1);
   transition: 1s;
 }
 
-.descript-hide {
-  height: 200px;
-  transition: 1s;
-}
-.img-block:hover .descript-hide {
-  padding: 0;
-  height: 0px;
-  transition: 1s;
-  border-color: transparent;
-}
-
-.img-block:hover .link-contact {
-  visibility: visible;
-  height: 35px;
-  transition: 1s;
-}
 .link-contact {
-  transition: 1s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-block:hover .link-contact {
+  width: 100%;
+  height: 40px;
 }
 
 .marquee {
@@ -129,4 +117,8 @@
   to {
     transform: scale(1);
   }
+}
+
+img {
+  pointer-events: none;
 }

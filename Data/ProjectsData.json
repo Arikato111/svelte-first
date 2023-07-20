@@ -20,7 +20,7 @@
         "title": "what to read",
         "descript": "ไม่รู้จะอ่านอะไร เลือกไม่ออก บอกไม่ถูก งั้น สุ่มเลือกเอาละกัน!",
         "link": "https://what-to-read-nu.vercel.app/",
-        "img": "/projects/what-to-read.png",
+        "img": "https://what-to-read-nu.vercel.app/example.png",
         "source": "https://github.com/Arikato111/what-to-read"
     },
     {
@@ -28,7 +28,7 @@
         "title": "life coach",
         "descript": "If you have life, you must have life coach.",
         "link": "https://life-coach-quotes.vercel.app",
-        "img": "/projects/life-coach.png",
+        "img": "https://life-coach-quotes.vercel.app/example-page.png",
         "source": "https://github.com/Arikato111/life-coach-quotes"
     },
     {
