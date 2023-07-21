@@ -50,10 +50,12 @@
 .link-contact {
   margin-left: auto;
   margin-right: auto;
+  opacity: 0;
 }
 .img-block:hover .link-contact {
   width: 100%;
   height: 40px;
+  opacity: 1;
 }
 
 .marquee {
