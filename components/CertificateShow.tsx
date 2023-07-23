@@ -9,9 +9,9 @@ const CertificateShow: FC<CertificateShowProps> = ({ src, alt, type }) => {
   return (
     <div className="m-10 inline-block">
       <div className="dark:text-slate-200 font-bold">{type}</div>
-      <div className="inline-block transition-all duration-500">
+      <div className="lg:hover:scale-105 inline-block transition-all shadow lg:hover:shadow-lg shadow-gray-400 lg:hover:shadow-gray-300 duration-300 dark:shadow-slate-700 dark:hover:shadow-slate-800 rounded border-2 border-purple-400">
         <img
-          className="w-80 shadow lg:hover:shadow-lg shadow-gray-400 lg:hover:shadow-gray-300 hover:scale-105 duration-300 dark:shadow-slate-600   rounded border-2 border-purple-400"
+          className="w-80"
           src={src}
           alt={alt}
           title={alt}
