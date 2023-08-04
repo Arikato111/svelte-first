@@ -95,7 +95,7 @@ export default function Novel({ isFlowerFall }: MessageProps) {
           </div>
 
           <div className="pt-10 p-3">
-            <pre className="text-emerald-500 whitespace-pre-wrap px-5 sm:px-20 sm:text-lg dark:text-slate-200">It's nothing..</pre>
+            <pre className="text-emerald-500 whitespace-pre-wrap px-5 sm:px-20 sm:text-lg dark:text-slate-200">It&apos;s nothing..</pre>
           </div>
         </main>
       </>
