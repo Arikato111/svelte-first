@@ -8,6 +8,7 @@ import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import OnlyFansIcon from "@/components/icons/OnlyFansIcon";
 import YoutubeIcon from "@/components/icons/YoutubeIcon";
 import ThreeWord from "@/components/ThreeWord";
+import Projects from "@/Data/ProjectsData.json";
 import Head from "next/head";
 import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
@@ -119,6 +120,9 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
       </main>
       {Certificates.map((cer, idx) => (
         <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
+      ))}
+      {Projects.map((prj, idx) => (
+        <img key={idx} className="hidden" src={prj.img} alt={prj.title} />
       ))}
     </>
   );

@@ -1,22 +1,10 @@
 import { FC, useState } from "react";
 
 const YoutubeSong: FC = () => {
-  const SongList = [
-    "dHDNHIxmBNU", // pancreas
-    "iB3_NR5bYVc", // pancreas
-    "5Z3kPL_UAys", // pancreas
-    "5Z3kPL_UAys", // kyoubyou bunko
+  const SongList = ["5Z3kPL_UAys"];
 
-    "VaFRVg7iktU", // your lie in april
-    "NOMkHGnDPsc", // again - your lie in april
-
-    "4uOHQ7mO-Kk", // Last Scene - Ikimono Gakari
-    "Hy9s13hWsoc", // Orange - seven oops
-  ];
-
-  const [randomNumber, setRandomNumber] = useState(
-    Math.floor(Math.random() * SongList.length)
-  );
+  // useState but no setState because it's never used.
+  const [randomNumber] = useState(Math.floor(Math.random() * SongList.length));
 
   return (
     <iframe

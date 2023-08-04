@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { isDark } from "./CheckMode";
+import { isDark, setTheme } from "./CheckMode";
 
 
 const ToggleMode: FC = () => {
@@ -14,9 +14,11 @@ const ToggleMode: FC = () => {
         let state = window.document.documentElement.classList.contains("dark");
         if (state) {
             window.document.documentElement.classList.remove("dark");
+            setTheme(false);
             setText("🌞")
         } else {
             window.document.documentElement.classList.add("dark");
+            setTheme(true);
             setText("🌚")
         }
     }
