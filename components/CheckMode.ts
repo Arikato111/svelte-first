@@ -1,22 +1,27 @@
 export function setTheme(isDark: boolean) {
   try {
-    let prefs = JSON.parse(localStorage.getItem("prefs") ?? "");
+    let prefs = JSON.parse(localStorage.getItem("prefs") ?? "{}") ?? {};
     prefs.darkTheme = isDark;
     localStorage.setItem("prefs", JSON.stringify(prefs));
   } catch (err) {
-    console.log("Error: at checkMode.ts \n************\n", err);
+    console.error("Error: setTheme at checkMode.ts \n************\n", err);
   }
 }
 
 export function checkTheme() {
   try {
     // check darkMode from localStorage
-    let prefs = JSON.parse(localStorage.getItem("prefs") ?? "");
-    if (prefs && prefs.darkTheme) {
+    let prefs = JSON.parse(localStorage.getItem("prefs") ?? "{}") ?? {};
+    if (prefs.darkTheme === true) {
+      // darkTheme is true switching to darkTheme
       document.documentElement.classList.add("dark");
+      return;
+    } else if (prefs.darkTheme === false) {
+      // darkTheme is not null. return for light mode
+      return;
     }
   } catch (err) {
-    console.log("Error: at checkMode.ts \n************\n", err);
+    console.error("Error: checkTheme at checkMode.ts \n************\n", err);
   }
 
   // check darkTheme from browser
