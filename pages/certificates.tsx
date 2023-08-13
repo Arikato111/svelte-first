@@ -5,6 +5,7 @@ import CertificateData from "../Data/CertificatesData.json";
 import CertificateShow from "@/components/CertificateShow";
 import Head from "next/head";
 import MetaTag from "@/components/MetaTag";
+import Image from "next/image";
 
 export default function Certificates() {
   
@@ -28,7 +29,7 @@ export default function Certificates() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 text-center">
           {CertificateData.map((Cer, idx) => (
             <div key={idx}>
-              <img className="hidden" src={"/cer/" + Cer.img} alt="" />
+              <Image width={300} height={200} className="hidden" src={"/cer/" + Cer.img} alt="" />
               <div>
                 <Link href={`/certificates/${Cer.id}`}>
                   <CertificateShow

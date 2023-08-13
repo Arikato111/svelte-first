@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "d": "next dev",
     "dev": "next dev",
+    "b": "next build",
     "build": "next build",
+    "s": "next start",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,6 +20,7 @@
     "next": "13.4.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sharp": "^0.32.4",
     "typescript": "5.1.6"
   },
   "devDependencies": {

@@ -14,6 +14,7 @@ import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
 import MetaTag from "@/components/MetaTag";
 import { MouseEvent } from "react";
+import Image from "next/image";
 
 type HomeProps = {
   isFlowerFall: boolean;
@@ -119,10 +120,10 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
         </div>
       </main>
       {Certificates.map((cer, idx) => (
-        <img key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
+        <Image width={0} height={0} key={idx} className="hidden" src={"/cer/low/" + cer.img} alt="" />
       ))}
       {Projects.map((prj, idx) => (
-        <img key={idx} className="hidden" src={prj.img} alt={prj.title} />
+        <Image width={0} height={0} key={idx} className="hidden" src={prj.img} alt={prj.title} />
       ))}
     </>
   );

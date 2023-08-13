@@ -22,16 +22,26 @@
 }
 
 @media print {
-  @page {
+  * {
     margin: 0;
     padding: 0;
-    size: A4 landscape;
+  }
+  @page {
+    margin: 0px !important;
+    padding: 0px !important;
+    size: A4 landscape !important;
+  }
+  html,
+  body {
+    width: auto;
+    height: auto;
   }
   .sakura {
     display: none;
   }
   img {
-    height: 100vh;
+    height: 100vh !important;
+    width: 100vw !important;
   }
 }
 
