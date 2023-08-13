@@ -37,49 +37,24 @@ const languages = <LanguageList>[
     title: "Dart",
     level: "little",
   },
+  {
+    id: 5,
+    title: "Rust",
+    level: "little",
+  },
 ];
 
 const tools = [
-  {
-    id: 0,
-    title: "React",
-  },
-  {
-    id: 1,
-    title: "Nextjs",
-  },
-  {
-    id: 2,
-    title: "Svelte",
-  },
-  {
-    id: 3,
-    title: "Tailwindcss",
-  },
-  {
-    id: 4,
-    title: "Nodejs",
-  },
-  {
-    id: 5,
-    title: "MySQL",
-  },
-  {
-    id: 6,
-    title: "Flutter",
-  },
-  {
-    id: 7,
-    title: "Git",
-  },
-  {
-    id: 8,
-    title: "bash & linux",
-  },
-  {
-    id: 9,
-    title: "vscode",
-  },
+  "React",
+  "Nextjs",
+  "Svelte",
+  "Tailwindcss",
+  "Nodejs",
+  "MySQL",
+  "Flutter",
+  "Git",
+  "bash & linux",
+  "vscode",
 ];
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
