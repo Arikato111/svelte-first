@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 
 type ProjectCardProps = {
   title: string;
@@ -21,7 +20,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
       <div className="img-block p-1 duration-500 relative inline-block  w-[320px] h-[390px] overflow-hidden dark:border-slate-200">
         <div className=" shadow-none overflow-hidden">
           <div className="overflow-hidden rounded-md border-2 border-purple-400 shadow-md shadow-gray-300 dark:shadow-gray-800">
-            <Image
+            <img
               width={300}
               height={200}
               className="img-hover shadow-inner h-[200px] w-full object-cover"

@@ -6,7 +6,6 @@ import ButtonContact from "@/components/ButtonContact";
 import ArrowIcon from "@/components/icons/ArrowIcon";
 import MenuDropdown from "@/components/MenuDropdown";
 import MetaTag from "@/components/MetaTag";
-import Image from "next/image";
 
 type CerProps = {
   data: typeof CertificatesData[0];
@@ -34,7 +33,7 @@ export default function SingleCertificate({ data }: CerProps) {
           <MenuDropdown link={data.link} />
         </div>
         <div className="text-center my-20 lg:my-0 print:m-0">
-          <Image
+          <img
           width={900}
           height={500}
             id="certificate"

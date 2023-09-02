@@ -18,8 +18,8 @@ const MenuDropdown: FC<CertificateType> = ({ link }) => {
         </div>
 
         <div
-          className={`absolute z-10 duration-300 ${
-            isShow ? "" : "h-0 overflow-hidden"
+          className={`absolute z-10 duration-500 overflow-hidden ${
+            isShow ? "h-40" : "h-0"
           }`}
         >
           <div className="grid-cols-2">
