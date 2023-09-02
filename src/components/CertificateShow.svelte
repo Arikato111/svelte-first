@@ -1,5 +1,4 @@
 <script>
-  import Atropos from "atropos/svelte";
   export let src = "";
   export let alt = "";
   export let type = "";
@@ -7,19 +6,11 @@
 
 <div class="m-10 inline-block">
   <span class="dark:text-slate-200 font-bold">{type}</span>
-  <Atropos
-    class="my-atropos shadow-lg hover:shadow-none  hidden shadow-slate-400 dark:shadow-slate-600  lg:inline-block lg:hover:scale-125 transition-all duration-500"
+  <div
+    class="lg:hover:scale-105 inline-block transition-all shadow lg:hover:shadow-lg shadow-gray-400 lg:hover:shadow-gray-300 duration-300 dark:shadow-slate-700 dark:hover:shadow-slate-800 rounded border-2 border-purple-400"
   >
     <img
-      class="w-80 hidden lg:inline-block rounded-lg border-2 border-purple-400"
-      {src}
-      {alt}
-      title={alt}
-    />
-  </Atropos>
-  <div class="inline-block lg:hidden transition-all duration-500">
-    <img
-      class="w-80 shadow-lg shadow-slate-400 dark:shadow-slate-600   rounded-lg border-2 border-purple-400"
+      class="w-80"
       {src}
       {alt}
       title={alt}

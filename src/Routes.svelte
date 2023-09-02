@@ -1,14 +1,14 @@
 <script>
   import { Router, Route } from "svelte-routing";
   import App from "./App.svelte";
-  import Certificate from "./pages/Certificate.svelte";
   import SingleCertificate from "./pages/SingleCertificate.svelte";
   import { checkTheme } from "./components/CheckMode";
   import ToggleMode from "./components/ToggleMode.svelte";
   import Projects from "./pages/Projects.svelte";
-  import YoutubeIcon from "./components/icons/YoutubeIcon.svelte";
   import YoutubeSong from "./components/YoutubeSong.svelte";
-  import { pause, play, status } from "./components/PlaySound";
+  import { pause, play  } from "./components/PlaySound";
+  import Certificate from "./pages/Certificate.svelte";
+  import Message from "./pages/Message.svelte";
 
   checkTheme();
 
@@ -31,9 +31,10 @@
   <YoutubeSong />
 {/if}
 <Router {url}>
-  <Route path="/certificates" component={Certificate} />
-  <Route path="/certificates/:id" let:params component={SingleCertificate} />
-  <Route path="/projects" component={Projects} />
+  <Route path="/certificates"><Certificate /></Route>
+  <Route path="/certificates/:id" let:params><SingleCertificate id={params.id} /></Route>
+  <Route path="/message"><Message isFlowerFall={isFlowerFall} /></Route>
+  <Route path="/projects"><Projects /></Route>
   <Route path="/"
     ><App {isFlowerFall} changeFloerFall={changeFlowerFall} /></Route
   >

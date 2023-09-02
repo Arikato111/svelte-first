@@ -13,12 +13,13 @@
   import OnlyFansIcon from "./components/icons/OnlyFansIcon.svelte";
   import CertificateData from "./Data/CertificatesData.json";
   import ProjectsData from "./Data/ProjectsData.json";
+  import Banner from "./components/Banner.svelte";
 
   export let isFlowerFall = false;
   export let changeFloerFall = () => {};
 
   let TheFlowerIcon = isFlowerFall ? FlowerIcon : OnlyFansIcon;
-  let flowerTitle = isFlowerFall ? "Spring" : "OnlyFans";
+  let flowerTitle = isFlowerFall ? "in the spring" : "OnlyFans";
   const onSpecial = () => {
     isFlowerFall = !isFlowerFall;
     changeFloerFall();
@@ -26,7 +27,7 @@
       // @ts-ignore
       let sakura = new Sakura("body");
       TheFlowerIcon = FlowerIcon;
-      flowerTitle = "Spring";
+      flowerTitle = "in the spring";
     } else {
       // @ts-ignore
       let sakura = new Sakura("body");
@@ -35,29 +36,23 @@
       flowerTitle = "OnlyFans";
     }
   };
+  const evenClickThatButton = (e) => {
+    e.preventDefault();
+    onSpecial();
+  };
 </script>
 
 <svelte:head>
   <title>Arikato111</title>
 </svelte:head>
 
-<main class="main-flex">
-  <div
-    class="text-3xl sm:text-6xl text-slate-800 dark:text-slate-200 font-medium"
-  >
-    {#if isFlowerFall}
-      私の名前は <span class="text-purple-700 use-font font-bold"
-        ><span>ナワサン。</span></span
-      ><span class="inline-block duration-300 ease-in-out transition">🌳</span>
-    {:else}
-      Hello!, I'm <span class="text-purple-700 use-font font-bold changename"
-        ><span>Arikato111</span></span
-      ><span
-        class="inline-block hover:rotate-45 duration-300 ease-in-out transition"
-        >👋</span
-      >
-    {/if}
-  </div>
+<main class={`main-flex ${isFlowerFall ? "bg-transparent" : ""}`}>
+  {#if isFlowerFall}
+    <div
+      class="absolute -z-20 w-screen h-screen bg-cover opacity-80 bg-beautiful dark:hidden"
+    />
+  {/if}
+  <Banner isSwitching={isFlowerFall} />
   {#if isFlowerFall}
     <ThreeWord word1={"Love"} word2={"Relationship"} word3={"Memories"} />
   {:else}
@@ -65,36 +60,39 @@
   {/if}
   <div class="sm:flex flex-wrap items-center justify-center">
     <a href="https://github.com/Arikato111">
-      <ButtonContact title="Github" Icon={GithubIcon} />
+      <ButtonContact Class="mobile-size" title="Github" Icon={GithubIcon} />
     </a>
     <Link to="/certificates">
-      <ButtonContact title="Certificates" Icon={CertificateIcon} />
+      <ButtonContact
+        Class="mobile-size"
+        title="Certificates"
+        Icon={CertificateIcon}
+      />
     </Link>
     <Link to="/projects">
-      <ButtonContact title="Projects" Icon={FileIcon} />
+      <ButtonContact Class="mobile-size" title="Projects" Icon={FileIcon} />
     </Link>
     <a href="https://www.linkedin.com/in/nawasan-wisitsingkhon-183680239/">
-      <ButtonContact title="Linkedin" Icon={LinkedinIcon} />
+      <ButtonContact Class="mobile-size" title="Linkedin" Icon={LinkedinIcon} />
     </a>
     <a href="https://youtube.com/@Arikato111">
-      <ButtonContact Icon={YoutubeIcon} title="Youtube" />
+      <ButtonContact Class="mobile-size" Icon={YoutubeIcon} title="Youtube" />
     </a>
     <a
-      href="https://youtu.be/dHDNHIxmBNU"
+      href="/redirect?link=149afd631693c895f81e508eb5aaef37"
       on:auxclick={(e) => {
         e.preventDefault();
         // onSpecial();
       }}
-      on:contextmenu={(e) => {
-        e.preventDefault();
-        onSpecial();
-      }}
-      on:click={(e) => {
-        e.preventDefault();
-        onSpecial();
-      }}
+      on:contextmenu={evenClickThatButton}
+      on:mousedown={(e) => e.preventDefault()}
+      on:click={evenClickThatButton}
     >
-      <ButtonContact Icon={TheFlowerIcon} title={flowerTitle} />
+      <ButtonContact
+        Class="mobile-size"
+        Icon={TheFlowerIcon}
+        title={flowerTitle}
+      />
     </a>
   </div>
   <!-- load resources -->
@@ -105,12 +103,3 @@
     <img class="hidden" src={pj.img} alt="" />
   {/each}
 </main>
-
-<style>
-  .changename:hover span {
-    display: none;
-  }
-  .changename:hover::before {
-    content: "Nawasan ";
-  }
-</style>

@@ -54,5 +54,19 @@
         "title": "Build a reputation for the school",
         "img": "NameAndSound.jpg",
         "link": "/files/competition.pdf"
+    },
+    {
+        "id": 8,
+        "type": "dev tool",
+        "title": "GitHub for Developer",
+        "img": "github-learn-borntodev.png",
+        "link": "https://school.borntodev.com/certificate/DdQptfY4fh3l"
+    },
+    {
+        "id": 9,
+        "type": "dev tool",
+        "title": "Azure functions",
+        "img": "azure-learn-borntodev.png",
+        "link": "https://school.borntodev.com/certificate/Ynmsii3x8w7r"
     }
 ]

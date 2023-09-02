@@ -29,7 +29,7 @@
         <ButtonContact Icon={ArrowIcon} title="back" />
       </Link>
     </div>
-    <MenuDropdown {id} />
+    <MenuDropdown link={CertificatesData[id].link} />
   </div>
   <div class="text-center my-20 lg:my-0 print:m-0">
     <img

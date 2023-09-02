@@ -1,16 +1,17 @@
 <script>
   export let title;
   export let Icon;
+  export let Class = "";
 </script>
 
 <div
-  class="duration-200 bg-purple-400 hover:bg-purple-500
+  class={`${Class} duration-300 bg-purple-600 hover:bg-purple-600/90
   dark:bg-slate-900 text-white dark:text-slate-200
-    fill-white  dark:fill-slate-200 flex justify-center 
+    fill-white dark:fill-slate-200 flex justify-center
     items-center rounded-lg border-2 py-1 px-3 font-medium
-     border-purple-500 dark:border-slate-200 
+     border-white dark:border-slate-200
      dark:hover:bg-gray-700 m-1 hover:scale-105
-     shadow-md shadow-gray-300 dark:shadow-none"
+     shadow hover:shadow-lg hover:shadow-gray-300 shadow-gray-400 dark:shadow-none`}
 >
   <span class="inline-block w-8 mx-1">
     <svelte:component this={Icon} />
