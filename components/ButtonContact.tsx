@@ -10,7 +10,7 @@ const ButtonContact: FC<ButtonContactInput> = ({ title, Icon, Class }) => {
   return (
     <div
       className={`${Class ?? ""} duration-300 bg-purple-600 hover:bg-purple-600/90
-  dark:bg-slate-900 text-white dark:text-slate-200
+  dark:bg-black text-white dark:text-slate-200
     fill-white  dark:fill-slate-200 flex justify-center 
     items-center rounded-lg border-2 py-1 px-3 font-medium
      border-white dark:border-slate-200 
