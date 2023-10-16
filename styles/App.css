@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
 .use-font {
-  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 ::-webkit-scrollbar {
@@ -17,8 +17,19 @@
 
 .bg-beautiful {
   background-image: url("/bg2.jpg");
+  /* filter: hue-rotate(250deg); */
   background-position: center;
   background-repeat: no-repeat, repeat;
+}
+
+.dark .sakura {
+  background: red !important;
+}
+.dark .tree::before {
+  content: "🌹";
+}
+.dark .tree span {
+  display: none;
 }
 
 @media print {

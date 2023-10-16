@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import "@/styles/App.css";
-import "@/public/sakura.min.css";
+import "@/public/sakura.css";
 import Script from "next/script";
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -55,7 +55,7 @@ export default function App({ Component, pageProps }: AppProps) {
         isFlowerFall={isFlowerFall}
         changeFlowerFall={changeFlowerFall}
       />
-      <Script src="/sakura.min.js" />
+      <Script src="/sakura.js" />
     </>
   );
 }
