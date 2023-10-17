@@ -11,6 +11,10 @@
 .changename:hover span {
   display: none;
 }
+
+.dark .my-name {
+  color: red;
+}
 .changename:hover::before {
   content: "Nawasan ";
 }
