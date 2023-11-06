@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 
 const YoutubeSong: FC = () => {
   const darktheme = document.getElementsByClassName("dark");
-  const SongList = darktheme.length ? ["ofQfRMpm7Ks"] : ["5Z3kPL_UAys"];
+  const SongList = darktheme.length ? ["OnkmC5qZqRE"] : ["5Z3kPL_UAys"];
 
   // useState but no setState because it's never used.
   const [randomNumber] = useState(Math.floor(Math.random() * SongList.length));
