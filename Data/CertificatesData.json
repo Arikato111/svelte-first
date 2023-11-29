@@ -68,5 +68,12 @@
         "title": "Azure functions",
         "img": "azure-learn-borntodev.png",
         "link": "https://school.borntodev.com/certificate/Ynmsii3x8w7r"
+    },
+    {
+        "id": 10,
+        "type": "network",
+        "title": "server monitoring",
+        "img": "ubu-monitoring.png",
+        "link": "https://training.ubu.ac.th/detail.php?id=213"
     }
 ]
