@@ -12,7 +12,7 @@ import Projects from "@/Data/ProjectsData.json";
 import Head from "next/head";
 import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
-import MetaTag from "@/components/MetaTag";
+import { DefaultMetaTag } from "@/components/MetaTag";
 import { MouseEvent } from "react";
 
 type HomeProps = {
@@ -44,12 +44,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
   return (
     <>
       <Head>
-        <MetaTag
-          title="Arikato111"
-          description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
-          image="https://arikato111.vercel.app/example-page.png"
-          url="https://arikato111.vercel.app"
-        />
+        <DefaultMetaTag />
         <title>Arikato111</title>
       </Head>
       <main className={`main-flex ${isFlowerFall ? "bg-transparent" : ""}`}>

@@ -4,18 +4,13 @@ import ArrowIcon from "@/components/icons/ArrowIcon";
 import Link from "next/link";
 import ProjectData from "../Data/ProjectsData.json";
 import ProjectCard from "@/components/ProjectCard";
-import MetaTag from "@/components/MetaTag";
+import { DefaultMetaTag } from "@/components/MetaTag";
 
 export default function Projects() {
   return (
     <>
       <Head>
-        <MetaTag
-          title="Arikato111's Opensource projects"
-          description="ผลโปรเจคเว็บไซต์และอื่นๆ ที่ได้สร้างขึ้นมา และมีการเปิด source code"
-          image="https://arikato111.vercel.app/project-example.png"
-          url="https://arikato111.vercel.app"
-        />
+        <DefaultMetaTag />
         <title>Projects | Arikato111</title>
       </Head>
       <main className="main">

@@ -18,8 +18,8 @@ export default function SingleCertificate({ data }: CerProps) {
         <MetaTag
           title={data.type + " Certifacate"}
           description={data.title}
-          image={`https://arikato111.vercel.app/cer/${data.img}`}
-          url="https://arikato111.vercel.app"
+          image={`https://nawasan.dev/cer/${data.img}`}
+          url="https://nawasan.dev"
         />
         <title>{`${data.title} | Arikato111`}</title>
       </Head>

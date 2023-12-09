@@ -20,3 +20,13 @@ export default function MetaTag({ title, description, url, image }: MetaTagInput
         <meta property="og:image" content={image} />
     </>
 }
+
+export function DefaultMetaTag() {
+    return <MetaTag
+        title="Arikato111"
+        description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
+        image="https://nawasan.dev/example-page.png"
+        url="https://nawasan.dev"
+    />
+
+}

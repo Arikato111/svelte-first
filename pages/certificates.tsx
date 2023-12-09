@@ -4,20 +4,15 @@ import ArrowIcon from "@/components/icons/ArrowIcon";
 import CertificateData from "../Data/CertificatesData.json";
 import CertificateShow from "@/components/CertificateShow";
 import Head from "next/head";
-import MetaTag from "@/components/MetaTag";
+import {DefaultMetaTag} from "@/components/MetaTag";
 
 export default function Certificates() {
   
   return (
     <>
       <Head>
-        <MetaTag
-          title="Arikato111"
-          description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
-          image="https://arikato111.vercel.app/example-page.png"
-          url="https://arikato111.vercel.app"
-        />
-        <title>Certificates | Arikato111</title>
+        <DefaultMetaTag />
+       <title>Certificates | Arikato111</title>
       </Head>
       <main className="main">
         <div className="inline-block">

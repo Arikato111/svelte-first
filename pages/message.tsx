@@ -1,5 +1,5 @@
 import Head from "next/head";
-import MetaTag from "@/components/MetaTag";
+import { DefaultMetaTag } from "@/components/MetaTag";
 import React from "react";
 import Link from "next/link";
 import ArrowIcon from "@/components/icons/ArrowIcon";
@@ -16,13 +16,8 @@ export default function Novel({ isFlowerFall }: MessageProps) {
     return (
       <>
         <Head>
-          <MetaTag
-            title="Arikato111"
-            description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
-            image="https://arikato111.vercel.app/example-page.png"
-            url="https://arikato111.vercel.app"
-          />
-          <title>Message | Arikato111</title>
+          <DefaultMetaTag />
+         <title>Message | Arikato111</title>
         </Head>
         <main className="main bg-yellow-100/40">
           <div className="inline-block">
@@ -66,13 +61,8 @@ export default function Novel({ isFlowerFall }: MessageProps) {
     return (
       <>
         <Head>
-          <MetaTag
-            title="Arikato111"
-            description="เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ"
-            image="https://arikato111.vercel.app/example-page.png"
-            url="https://arikato111.vercel.app"
-          />
-          <title>Message | Arikato111</title>
+          <DefaultMetaTag />
+         <title>Message | Arikato111</title>
         </Head>
         <main className="main bg-yellow-100/40">
           <div className="inline-block">
