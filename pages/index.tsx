@@ -100,7 +100,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
               />
             </a>
             <a
-              href="/redirect?link=149afd631693c895f81e508eb5aaef37"
+              href="https://youtu.be/lNvBbh5jDcA"
               onAuxClick={(e) => {
                 e.preventDefault();
                 // onSpecial();
