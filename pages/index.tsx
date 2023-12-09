@@ -58,7 +58,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
           ) : (
             <ThreeWord word1="Learning" word2="Creating" word3="Development" />
           )}
-          <div className="sm:flex flex-wrap items-center justify-center">
+          <nav className="sm:flex flex-wrap items-center justify-center">
             <a href="https://github.com/Arikato111">
               <ButtonContact
                 Class="mobile-size"
@@ -110,7 +110,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
                 title={flowerTitle}
               />
             </a>
-          </div>
+          </nav>
         </div>
       </main>
       {Certificates.map((cer, idx) => (
