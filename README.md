@@ -26,6 +26,7 @@
 
 ## TODOs
 
+- [ ] Find a new file storage 
 - [x] convert to Nextjs
 - [x] add more TODOs
 - [x] add show open source projects
