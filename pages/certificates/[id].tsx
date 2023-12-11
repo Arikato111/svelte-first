@@ -39,7 +39,7 @@ export default function SingleCertificate({ data }: CerProps) {
             id="certificate"
             title={data.title}
             className="w-full inline-block lg:w-7/12 shadow-lg shadow-gray-400 print:shadow-none print:w-screen"
-            src={"/cer/" + data.img}
+            src={data.img.high}
             alt={data.title}
           />
         </div>

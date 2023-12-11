@@ -26,13 +26,13 @@ export default function Certificates() {
               <div>
                 <Link href={`/certificates/${Cer.id}`}>
                   <CertificateShow
-                    src={"/cer/low/" + Cer.img}
+                    src={Cer.img.low}
                     alt={Cer.title}
                     type={Cer.type}
                   />
                 </Link>
               </div>
-              <img width={300} height={200} className="hidden" src={"/cer/" + Cer.img} alt="" />
+              <img width={300} height={200} className="hidden" src={Cer.img.high} alt="" />
             </div>
           ))}
         </div>
