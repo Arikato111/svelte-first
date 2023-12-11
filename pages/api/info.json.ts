@@ -40,7 +40,7 @@ const languages = <LanguageList>[
   {
     id: 5,
     title: "Rust",
-    level: "Little",
+    level: "Medium",
   },
   {
     id: 6,
