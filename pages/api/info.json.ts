@@ -6,7 +6,7 @@ import Projects from "@/Data/ProjectsData.json";
 type language = {
   id: number;
   title: string;
-  level: string;
+  level: "Strong" | "Medium" | "Little";
 };
 
 type LanguageList = language[];
@@ -35,12 +35,17 @@ const languages = <LanguageList>[
   {
     id: 4,
     title: "Dart",
-    level: "little",
+    level: "Little",
   },
   {
     id: 5,
     title: "Rust",
-    level: "little",
+    level: "Little",
+  },
+  {
+    id: 6,
+    title: "C",
+    level: "Medium",
   },
 ];
 
