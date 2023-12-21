@@ -15,13 +15,5 @@
     .frame {
         @apply  pt-10 pb-20;
     }
-    .project-detail {
-        @apply absolute justify-center items-center px-3 w-full h-full hidden z-10 duration-300 rounded-lg;
-    }
-}
-
-.project-card:hover  .project-detail {
-    backdrop-filter: blur(10px);
-    display: flex;
 }
 
