@@ -9,10 +9,15 @@ export default function Projects() {
         </div>
         <div className='grid grid-cols-2'>
             {ProjectsData.map((project, idx) => idx < 6 && (
-                <div key={idx} className='my-7 px-5 flex items-center flex-col'>
-                    <img className='w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={300} height={200} title={project.title} />
+                <div key={idx} className='project-card  my-7 px-5 flex items-center flex-col'>
+                    <div className='relative'>
+                        <div className="project-detail">{project.descript}</div>
+                        <img className='project-img w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={300} height={200} title={project.title} />
+                    </div>
                     <div>
-                        <h4 className='my-3 font-bold'>{project.title}</h4>
+                        <a className='hover:underline' target='_blank' href={project.source}>
+                            <h4 className='my-3 font-bold'>{project.title}</h4>
+                        </a>
                     </div>
                 </div>
             ))}
