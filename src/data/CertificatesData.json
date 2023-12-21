@@ -77,7 +77,7 @@
             "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2FNameAndSound.jpg?alt=media",
             "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2FNameAndSound.jpg?alt=media"
         },
-        "link": "/files/competition.pdf"
+        "link": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/files%2Fcompetition.pdf?alt=media"
     },
     {
         "id": 8,
