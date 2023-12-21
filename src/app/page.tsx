@@ -4,9 +4,13 @@ import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
 import { Metadata } from 'next'
 import Image from 'next/image'
+import { MetaTag, DefultMetaTag } from '@/components/MetaTag'
+
 
 export const metadata: Metadata = {
+  ...(DefultMetaTag("Home | Arikato111")),
   title: "Home | Arikato111",
+
 }
 
 export default function Home() {
@@ -29,6 +33,6 @@ export default function Home() {
           <Contact />
         </div>
       </div>
- </main>
+    </main>
   )
 }
