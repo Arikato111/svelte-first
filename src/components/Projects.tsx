@@ -4,12 +4,12 @@ import ProjectsData from '../data/ProjectsData.json'
 export default function Projects() {
     return <div className="frame">
         <div className='my-10 text-center'>
-            <h3 className='font-bold text-5xl '>My Projects</h3>
-            <h4 className='text-2xl'>about website, program and others</h4>
+            <h3 className='font-bold text-2xl sm:text-3xl md:text-5xl'>My Projects</h3>
+            <h4 className='text-lg sm:text-xl md:text-2xl'>about website, program and others</h4>
         </div>
         <div>
             {ProjectsData.map((project, idx) => idx < 3 && (
-                <div key={idx} className={`my-20 px-5 ${idx % 2 !== 0 ? "flex-row-reverse": "flex-row"} flex`}>
+                <div key={idx} className={`my-20 px-5 ${idx % 2 !== 0 ? "flex-row-reverse": "flex-row"} md:flex`}>
                     <div className='px-3 relative flex-1'>
                         <img className='w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={300} height={200} title={project.title} />
                     </div>

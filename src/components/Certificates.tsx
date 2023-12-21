@@ -5,10 +5,10 @@ export function Certificates() {
     if(CertificatesData[0].id == 0) CertificatesData.reverse()
     return <div className='frame'>
         <div className='my-10 text-center'>
-            <h3 className='font-bold text-5xl '>My Certificates</h3>
-            <h4 className='text-2xl'>from studying, competition and others</h4>
+            <h3 className='font-bold text-2xl sm:text-2xl md:text-5xl '>My Certificates</h3>
+            <h4 className='text-lg sm:text-xl md:text-2xl'>from studying, competition and others</h4>
         </div>
-        <div className='grid grid-cols-2'>
+        <div className='grid md:grid-cols-2'>
             {CertificatesData.map((cer, idx) => idx < 6 && (
                 <div key={idx} className='my-7 px-5 flex items-center flex-col'>
                     <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
