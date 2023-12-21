@@ -60,30 +60,6 @@ const tools = [
   "bash & linux",
   "vscode",
 ];
-
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.status(200).json({
-    name: "Nawasan Wisitsingkhon",
-    contact: {
-      github: "https://github.com/Arikato111",
-      linkedin: "https://www.linkedin.com/in/nawasan/",
-      youtube: "https://youtube.com/@Arikato111",
-    },
-    education: {
-      name: "Ubon Ratchathani University",
-      faculty: "Science",
-      major: "information and communication technology",
-    },
-    skills: {
-      languages,
-      tools,
-    },
-    projects: Projects,
-    certificates: Certificates,
-  });
-}
-
 export function GET() {
   return Response.json({
     name: "Nawasan Wisitsingkhon",
