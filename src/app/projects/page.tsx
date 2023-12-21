@@ -1,7 +1,9 @@
 import { Metadata } from 'next'
 import ProjectsData from '../../data/ProjectsData.json'
+import { DefaultMetaTag } from '@/components/MetaTag'
 
 export const metadata: Metadata = {
+    ...(DefaultMetaTag("Projects | Arikato111")),
     title: "Projects | Arikato111"
 }
 

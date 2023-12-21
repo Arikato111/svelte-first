@@ -1,8 +1,10 @@
 import Link from "next/link"
 import CertificatesData from '../../data/CertificatesData.json'
 import { Metadata } from "next"
+import { DefaultMetaTag } from '../../components/MetaTag'
 
 export const metadata: Metadata = {
+    ...(DefaultMetaTag("Certificates | Arikato111")),
     title: "Certificates | Arikato111"
 }
 
@@ -19,7 +21,7 @@ export default function CertifacatePage() {
                     {CertificatesData.map((cer, idx) => (
                         <div key={idx} className='my-7 px-5 flex items-center flex-col'>
                             <Link href={'/certificates/' + cer.id}>
-                            <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
+                                <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
                             </Link>
                             <div>
                                 <h4 className='my-3 font-bold'>{cer.title}</h4>

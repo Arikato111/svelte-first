@@ -4,11 +4,11 @@ import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
 import { Metadata } from 'next'
 import Image from 'next/image'
-import { MetaTag, DefultMetaTag } from '@/components/MetaTag'
+import { DefaultMetaTag } from '@/components/MetaTag'
 
 
 export const metadata: Metadata = {
-  ...(DefultMetaTag("Home | Arikato111")),
+  ...(DefaultMetaTag("Home | Arikato111")),
   title: "Home | Arikato111",
 
 }

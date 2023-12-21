@@ -21,7 +21,7 @@ export function MetaTag({ title, description, url, image, }: MetaTagProps): Meta
   };
 }
 
-export function DefultMetaTag(title: string) {
+export function DefaultMetaTag(title: string) {
     return MetaTag({
       title,
       description: "เว็บไซต์สำหรับการแนะนำตัว ช่องทางการติดต่อ และเก็บผลงานการเขียนเว็บไซต์ต่างๆ",
