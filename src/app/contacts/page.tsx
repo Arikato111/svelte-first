@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaNpm, FaYoutube, FaYoutubeSquare } from 'react-icons/fa'
-import {MdMail} from 'react-icons/md'
+import { MdMail } from 'react-icons/md'
 
 export const metadata: Metadata = {
     title: "Contact | Arikato111"
@@ -9,27 +9,26 @@ export const metadata: Metadata = {
 export default function ContactsPage() {
     return <div className="frame flex flex-col justify-center items-center min-h-[60vh]">
         <div className='my-10 text-center'>
-            <h3 className='font-bold text-5xl '>My Contacts</h3>
-            <h4 className='text-2xl'>social media, source code and others</h4>
+            <h3 className='font-bold text-2xl sm:text-2xl md:text-5xl '>My Contacts</h3>
+            <h4 className='text-lg sm:text-xl md:text-2xl'>social media, source code and others</h4>
         </div>
         <div className='flex justify-center items-center'>
-            <a className='mx-3 hover:scale-105 duration-150' href="https://github.com/Arikato111" target='_blank'>
-                <FaGithub size={58} />
+            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://github.com/Arikato111" target='_blank'>
+                <FaGithub className="size-10 md:size-14" size={58} />
             </a>
-            <a className='mx-3 hover:scale-105 duration-150' href="https://www.linkedin.com/in/nawasan/" target='_blank'>
-                <FaLinkedin size={58} />
+            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://www.linkedin.com/in/nawasan/" target='_blank'>
+                <FaLinkedin className="size-10 md:size-14" size={58} />
             </a>
-            <a className='mx-3 hover:scale-105 duration-150' href="mailto:contact@nawasan.dev" target='_blank'>
-                <MdMail size={58} />    
-            </a>
- 
-            <a className='mx-3 hover:scale-105 duration-150' href="https://youtube.com/@Arikato111" target='_blank'>
-                <FaYoutube size={58} />
-            </a>
-            <a className='mx-3 hover:scale-105 duration-150' href="https://www.npmjs.com/~arikato111" target='_blank'>
-                <FaNpm size={58} />
+            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="mailto:contact@nawasan.dev" target='_blank'>
+                <MdMail className="size-10 md:size-14" size={58} />
             </a>
 
+            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://youtube.com/@Arikato111" target='_blank'>
+                <FaYoutube className="size-10 md:size-14" size={58} />
+            </a>
+            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://www.npmjs.com/~arikato111" target='_blank'>
+                <FaNpm className="size-10 md:size-14" size={58} />
+            </a>
         </div>
     </div>
 }
