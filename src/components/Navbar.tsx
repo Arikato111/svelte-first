@@ -13,7 +13,7 @@ export default function Navbar() {
             <Link className="nav-link" href={"/certificates"}>Certificates</Link>
             <Link className="nav-link" href={"/projects"}>Projects</Link>
             <Link className="nav-link" href={"/about"}>About</Link>
-            <Link className="nav-link" href={"/contact"}>Contact</Link>
+            <Link className="nav-link" href={"/contacts"}>Contacts</Link>
         </nav>
     </header>
 }

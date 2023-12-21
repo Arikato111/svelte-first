@@ -9,8 +9,8 @@ export default function ProjectsPage() {
     return <main>
         <div className="frame">
             <div className='my-10 text-center'>
-                <h3 className='font-bold text-5xl '>My Projects</h3>
-                <h4 className='text-2xl'>about website, program and others</h4>
+                <h1 className='font-bold text-5xl '>My Projects</h1>
+                <h2 className='text-2xl'>about website, program and others</h2>
             </div>
 
             <div className='bg-gray-50 py-1'>

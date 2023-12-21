@@ -7,22 +7,24 @@ export const metadata: Metadata = {
 }
 
 export default function CertifacatePage() {
-    if(CertificatesData[0].id == 0) CertificatesData.reverse()
+    if (CertificatesData[0].id == 0) CertificatesData.reverse()
     return <div className='frame'>
-        <div className="box-lg">
-            <div className='my-10 text-center'>
-                <h1 className='font-bold text-5xl'>My Certificates</h1>
-                <h2 className='text-2xl'>from studying, competition and others</h2>
-            </div>
-            <div className='grid grid-cols-3 bg-gray-50'>
-                {CertificatesData.map((cer, idx) => (
-                    <div key={idx} className='my-7 px-5 flex items-center flex-col'>
-                        <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
-                        <div>
-                            <h4 className='my-3 font-bold'>{cer.title}</h4>
+        <div className='my-10 text-center'>
+            <h1 className='font-bold text-5xl'>My Certificates</h1>
+            <h2 className='text-2xl'>from studying, competition and others</h2>
+        </div>
+        <div className=" bg-gray-50">
+            <div className="box-lg">
+                <div className='grid grid-cols-3'>
+                    {CertificatesData.map((cer, idx) => (
+                        <div key={idx} className='my-7 px-5 flex items-center flex-col'>
+                            <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
+                            <div>
+                                <h4 className='my-3 font-bold'>{cer.title}</h4>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     </div>
