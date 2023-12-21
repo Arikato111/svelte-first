@@ -16,8 +16,8 @@
 
 ## Get started
 
-- `yarn` or `npm i` to install packages
-- `yarn dev` or `npm run dev` to run the website on dev mode
+- `pnpm i` or `npm i` to install packages
+- `pnpm d` or `npm run dev` to run the website on dev mode
 
 ## Inside it
 
