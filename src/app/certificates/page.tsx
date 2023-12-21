@@ -11,8 +11,8 @@ export default function CertifacatePage() {
     return <div className='frame'>
         <div className="box-lg">
             <div className='my-10 text-center'>
-                <h3 className='font-bold text-5xl'>My Certificates</h3>
-                <h4 className='text-2xl'>from studying, competition and others</h4>
+                <h1 className='font-bold text-5xl'>My Certificates</h1>
+                <h2 className='text-2xl'>from studying, competition and others</h2>
             </div>
             <div className='grid grid-cols-3 bg-gray-50'>
                 {CertificatesData.map((cer, idx) => (
