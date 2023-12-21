@@ -1,6 +1,11 @@
 "use client"
+import { Metadata } from "next";
 import Link from "next/link";
 import { TbZoomQuestion } from "react-icons/tb";
+
+export const metadata: Metadata = {
+    title: "Not found page"
+}
 
 export default function ErrorPage() {
     return <main className="flex flex-col h-[80vh] justify-center items-center">

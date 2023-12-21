@@ -8,8 +8,8 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     let cer = CertificatesData.filter(c => c.id == Number(params.id))[0]
-    if (!cer.title) return {
-        title: "Not found"
+    if (!cer?.title) return {
+        title: "Not found page"
     }
     return {
         title: `${cer.title} | Arikato111`,
