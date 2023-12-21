@@ -1,0 +1,112 @@
+[
+    {
+        "id": 0,
+        "type": "startup",
+        "title": "basic startup crash course",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fhakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fhakata-Startup-Crash-Course-Startup-Crash-Course-Basic-HACKaTHAILAND_page-0001.jpg?alt=media"
+        },
+        "link": "https://hack1.hackathailand.com/courses/basic-startup-crash-course/"
+    },
+    {
+        "id": 1,
+        "type": "website development",
+        "title": "intermediate web application development full stack",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fhakata-Web-Application-Development-Full-Stack-Back-End-Developing-%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87-HACKaTHAILAND_page-0001.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fhakata-Web-Application-Development-Full-Stack-Back-End-Developing-%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87-HACKaTHAILAND_page-0001.jpg?alt=media"
+        },
+        "link": "https://hack1.hackathailand.com/courses/intermediate-web-application-development-full-stack/"
+    },
+    {
+        "id": 2,
+        "type": "website development",
+        "title": "basic web application development full stack",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fhakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fhakata-Web-Application-Development-Full-Stack-Web-App-Development-FulI-stack-basic-HACKaTHAILAND_page-0001.jpg?alt=media"
+        },
+        "link": "https://hack1.hackathailand.com/courses/basic-web-application-development-full-stack/"
+    },
+    {
+        "id": 3,
+        "type": "website design",
+        "title": "basic web design figma",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fhakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fhakata-Web-Design-Figma-Web-DesignFigma-Basic-HACKaTHAILAND_page-0001.jpg?alt=media"
+        },
+        "link": "https://hack1.hackathailand.com/courses/basic-web-design-figma/"
+    },
+    {
+        "id": 4,
+        "type": "School Website Writing Competition",
+        "title": "Provincial website writing competition",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fcompete-school-level1.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fcompete-school-level1.jpg?alt=media"
+        },
+        "link": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/files%2Fcompetition.pdf?alt=media"
+    },
+    {
+        "id": 5,
+        "type": "School Website Writing Competition",
+        "title": "Regional website writing competition",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fregional-website-writing-competition.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fregional-website-writing-competition.jpg?alt=media"
+        },
+        "link": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/files%2Fcompetition.pdf?alt=media"
+    },
+    {
+        "id": 6,
+        "type": "startup",
+        "title": "intermediate startup crash course",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fhakata-Startup-Crash-Course-Startup-Crash-Course-medium-HACKaTHAILAND.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fhakata-Startup-Crash-Course-Startup-Crash-Course-medium-HACKaTHAILAND.jpg?alt=media"
+        },
+        "link": "https://hack1.hackathailand.com/courses/intermediate-startup-crash-course/"
+    },
+    {
+        "id": 7,
+        "type": "School Website Writing Competition",
+        "title": "Build a reputation for the school",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2FNameAndSound.jpg?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2FNameAndSound.jpg?alt=media"
+        },
+        "link": "/files/competition.pdf"
+    },
+    {
+        "id": 8,
+        "type": "dev tool",
+        "title": "GitHub for Developer",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fgithub-learn-borntodev.png?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fgithub-learn-borntodev.png?alt=media"
+        },
+        "link": "https://school.borntodev.com/certificate/DdQptfY4fh3l"
+    },
+    {
+        "id": 9,
+        "type": "dev tool",
+        "title": "Azure functions",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fazure-learn-borntodev.png?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fazure-learn-borntodev.png?alt=media"
+        },
+        "link": "https://school.borntodev.com/certificate/Ynmsii3x8w7r"
+    },
+    {
+        "id": 10,
+        "type": "network",
+        "title": "server monitoring",
+        "img": {
+            "high": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Fubu-monitoring.png?alt=media",
+            "low": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fcer%2Flow%2Fubu-monitoring.png?alt=media"
+        },
+        "link": "https://training.ubu.ac.th/detail.php?id=213"
+    }
+]
