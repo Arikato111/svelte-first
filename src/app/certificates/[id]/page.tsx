@@ -9,7 +9,7 @@ export default async function CertificateId({ params }: { params: { id: string }
         <main className='frame'>
             <div className='my-10 text-center'>
                 <h3 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>{cer.title}</h3>
-                <h4 className='texl-lg sm:text-xl md:text-2xl'>from studying, competition and others</h4>
+                <h4 className='texl-lg sm:text-xl md:text-2xl'>{cer.type}</h4>
             </div>
             <div className="bg-gray-50">
                 <div className="box">
