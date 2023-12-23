@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: *.pdf
 Disallow: /api/*
+Disallow: /_next/*
 Allow: /
