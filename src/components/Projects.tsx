@@ -13,7 +13,7 @@ export default function Projects() {
                     <div className='px-3 relative flex-1'>
                         <img className='w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={300} height={200} title={project.title} />
                     </div>
-                    <div className='flex-1 px-3'>
+                    <div className={`flex-1 px-3 ${idx % 2 !== 0 ? "sm:text-right" : ""}`}>
                         <a className='hover:underline' target='_blank' href={project.source}>
                             <h4 className='my-3 text-slate-800 text-3xl font-bold'>{project.title}</h4>
                         </a>
