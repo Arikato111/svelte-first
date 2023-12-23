@@ -9,6 +9,7 @@ type MetaTagProps = {
 
 export function MetaTag({ title, description, url, image, }: MetaTagProps): Metadata {
   return {
+    metadataBase: new URL("https://nawasan.dev"),
     keywords: "Arikato111, Nawasan, Nawasan Wisitsingkhon, portfolio, ณวสันต์, ณวสันต์ วิศิษฏ์ศิงขร",
     description,
     openGraph: {
