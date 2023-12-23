@@ -9,7 +9,7 @@ import { DefaultMetaTag } from '@/components/MetaTag'
 
 export const metadata: Metadata = {
   ...(DefaultMetaTag("Home | Arikato111")),
-  title: "Home | Arikato111",
+  title: "Arikato111",
 
 }
 
