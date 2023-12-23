@@ -1,6 +1,6 @@
 import CertificatesData from '../../../data/CertificatesData.json'
 import Image from 'next/image'
-import ErrorPage from '@/app/error'
+import ErrorPage from '@/app/not-found'
 
 export default async function CertificateId({ params }: { params: { id: string } }) {
     const cer = CertificatesData.filter(c => c.id == Number(params.id))[0]
