@@ -1,4 +1,5 @@
 import CertificatesData from '../../../data/CertificatesData.json'
+import Image from 'next/image'
 import ErrorPage from '@/app/error'
 
 export default async function CertificateId({ params }: { params: { id: string } }) {
@@ -13,7 +14,7 @@ export default async function CertificateId({ params }: { params: { id: string }
             </div>
             <div className="bg-gray-50">
                 <div className="box">
-                    <img src={cer.img.high} alt={cer.title} />
+                    <Image src={cer.img.high} alt={cer.title} width={1920} height={1080} />
                 </div>
             </div>
             <div className='text-center mt-10'>
