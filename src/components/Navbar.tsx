@@ -17,7 +17,7 @@ export default function Navbar() {
             </div>
             <button className="md:hidden absolute top-0 right-0 p-3" onClick={() => setDropdown(!dropdown)}><MdMenu size={32} /></button>
             <div className="bg-black w-[2px] h-3/6 mx-3 hidden md:block"></div>
-            <div className={`${dropdown ? "block": "hidden md:block"}`}>
+            <div className={`w-full shadow md:shadow-none bg-white md:w-auto ${dropdown ? "block": "hidden md:block"}`}>
                 <Link  onClick={() => setDropdown(false)} className="nav-link" href={"/certificates"}>Certificates</Link>
                 <Link  onClick={() => setDropdown(false)} className="nav-link" href={"/projects"}>Projects</Link>
                 <Link  onClick={() => setDropdown(false)}    className="nav-link" href={"/about"}>About</Link>
