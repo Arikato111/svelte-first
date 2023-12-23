@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import ProjectsData from '../../data/ProjectsData.json'
 import { DefaultMetaTag } from '@/components/MetaTag'
 
@@ -20,7 +21,7 @@ export default function ProjectsPage() {
                     {ProjectsData.map((project, idx) => (
                         <div key={idx} className={`my-20 px-5 ${idx % 2 !== 0 ? "flex-row-reverse" : "flex-row"} sm:flex`}>
                             <div className='px-3 relative flex-1'>
-                                <img className='w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={300} height={200} title={project.title} />
+                                <Image className='w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={500} height={300} title={project.title} />
                             </div>
                             <div className={`flex-1 px-3 ${idx % 2 !== 0 ? "sm:text-right" : ""}`}>
                                 <a className='hover:underline' target='_blank' href={project.source}>
