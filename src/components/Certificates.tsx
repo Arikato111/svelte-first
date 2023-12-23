@@ -10,7 +10,7 @@ export function Certificates() {
         </div>
         <div className='grid md:grid-cols-2'>
             {CertificatesData.map((cer, idx) => idx < 6 && (
-                <div key={idx} className='my-7 px-5 flex items-center flex-col'>
+                <div key={idx} className='my-7 px-10 flex items-center flex-col'>
                     <Link href={"/certificates/" + cer.id}>
                         <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
                     </Link>
