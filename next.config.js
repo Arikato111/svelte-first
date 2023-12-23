@@ -2,8 +2,7 @@
 const nextConfig = {
   headers: async () => [
     {
-      source: "/:all*(svg|jpg|png)",
-      locale: false,
+      source: "/_next/image",
       headers: [
         {
           key: "Cache-Control",
@@ -18,19 +17,18 @@ const nextConfig = {
       destination: "/info.json",
     },
   ],
-  images: {                                                               
-   remotePatterns: [
-    {
-      protocol: "https",
-      hostname: "firebasestorage.googleapis.com"
-    },
-    {
-      protocol: "https",
-      hostname: "*.vercel.app"
-    }
-
-   ] 
-  }
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+      },
+      {
+        protocol: "https",
+        hostname: "*.vercel.app",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
