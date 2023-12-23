@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: *.svg
 Disallow: *.pdf
 Disallow: /api/*
 Allow: /
