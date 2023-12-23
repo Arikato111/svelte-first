@@ -18,6 +18,19 @@ const nextConfig = {
       destination: "/info.json",
     },
   ],
+  images: {                                                               
+   remotePatterns: [
+    {
+      protocol: "https",
+      hostname: "firebasestorage.googleapis.com"
+    },
+    {
+      protocol: "https",
+      hostname: "*.vercel.app"
+    }
+
+   ] 
+  }
 };
 
 module.exports = nextConfig;

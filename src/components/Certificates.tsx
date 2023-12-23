@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import CertificatesData from '../data/CertificatesData.json'
 
 export function Certificates() {
@@ -12,7 +13,7 @@ export function Certificates() {
             {CertificatesData.map((cer, idx) => idx < 6 && (
                 <div key={idx} className='my-7 px-10 flex items-center flex-col'>
                     <Link href={"/certificates/" + cer.id}>
-                        <img className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
+                        <Image className='w-full rounded-lg object-fill shadow' src={cer.img.low} alt={cer.title} width={300} height={200} title={cer.type} />
                     </Link>
                     <div>
                         <h4 className='my-3 font-bold'>{cer.title}</h4>
