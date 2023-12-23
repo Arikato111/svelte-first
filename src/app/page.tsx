@@ -19,7 +19,7 @@ export default function Home() {
       <div className='box-lg'>
         <Banner />
       </div>
-      <Image className="mt-5 mb-20 object-cover h-[400px] w-[100vw]" src={"/j2.jpg"} alt='sky' width={2000} height={1000} />
+      <Image className="mt-5 mb-20 object-cover h-[400px] w-[100vw]" src={"/j2.jpg"} alt='sky' width={1000} height={600} />
       <div className='bg-gray-50'>
         <div className='box'>
           <Certificates />
