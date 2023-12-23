@@ -22,7 +22,7 @@ export default function CertifacatePage() {
                     {CertificatesData.map((cer, idx) => (
                         <div key={idx} className='my-7 px-5 flex items-center flex-col'>
                             <Link href={'/certificates/' + cer.id}>
-                                <Image className="w-full rounded-lg object-fill shadow" src={cer.img.high} alt={cer.title} width={300} height={200} title={cer.type} />
+                                <Image className="w-full rounded-lg object-fill shadow" src={cer.img.high} alt={cer.title} width={400} height={300} title={cer.type} />
                            </Link>
                             <div>
                                 <h4 className='my-3 font-bold'>{cer.title}</h4>
