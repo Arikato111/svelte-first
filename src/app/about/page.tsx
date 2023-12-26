@@ -1,6 +1,8 @@
 import { Metadata } from "next"
+import { DefaultMetaTag } from "@/components/MetaTag"
 
 export const metadata: Metadata = {
+    ...(DefaultMetaTag("About | Arikato111")),
     title: "About | Arikato111"
 }
 
