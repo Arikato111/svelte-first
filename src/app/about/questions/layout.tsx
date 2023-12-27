@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-    title: "questions | Arikato111"
+    title: "Questions | Arikato111"
 }
 
 export default function QuestionsLayout({ children }: { children: ReactNode }) {

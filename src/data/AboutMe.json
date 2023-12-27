@@ -5,13 +5,15 @@
     "questions": [
         {
             "question": "\"Arikato111\" ทำไมเป็นชื่อนี้ ตั้งมาจากอะไร?",
-        "answer": [
+            "answer": [
                 "ชื่อนี้ตอนคิดแรกๆ ก็มีเพียงคำว่า Arikato ที่มาจากคำภาษาญี่ปุ่นว่า \"ありがとう\" ซึ่งมีความหมายว่า \"ขอบคุณ\" เพราะว่าช่วงนั้นสนใจภาษาญี่ปุ่น แต่หากเขียนตรงตัวจริงๆ จะเป็น \"Arigatou\" สาเหตุที่ไม่ได้เขียนตรงตัวเพราะว่าอยากให้คำมันต่างเพื่อที่ว่าคนอื่นจะได้ไม่ชิงตั้งชื่อไปก่อน นอกจากนั้นก็เพราะรูปเขียนมันส่วยกว่าด้วย แต่อย่างไรก็ตามด้วยที่ว่าเป็นคำทั่วไปสุดท้ายคนอื่นก็ยังชิงตั้งไปก่อนได้ ก็เลยเพิ่มตัว \"111\" เข้ามาเพื่อให้ไม่ซ้ำ ซึ่งที่มาที่ไปของเลข 1 สามตัว ก็ได้ตั้งตาม artist ที่ติดตามอยู่ ตอนนั้นก็สนใจวาดภาพด้วย"
-        ] 
+            ]
         },
         {
             "question": "ทำไมถึงชอบ open source?",
-            "answer": ["ช่วงที่ศึกษาอะไรต่างๆ เกี่ยวกับการเขียนโปรแกรม เขียนเว็บไซต์ ก็ค่อนข้างจะเจอบ่อยในส่วนที่เป็น library ซึ่งส่วนใหญ่เป็น open source โดยเฉพาะกับ Node.js นอกจากนั้น แหล่งที่ศึกษานั้นแทบทั้งหมดเป็นแหล่งเรียนรู้ที่ไม่เสียเงิน ไม่ว่าจะเป็นบน Youtube หรือ blog ตามเว็บไซต์ต่างๆ แต่สิ่งที่ทำให้สนใจ open source มากๆ เลยคือการได้เจอกับ Linux เพราะด้วยที่ว่าเป็น open source ทำให้มันฟรี แต่ที่มากกว่านั้นคือ มันมีประสิทธิภาพ ความสมเหตุสมผล ความอิสระในการเลือกใช้หรือปรับเปลี่ยน และที่มากไปกว่านั้นคือมันเป็นของเราทุกคน ทุกคนสามารถมีส่วนร่วมในการพัฒนา ทุกคนสามารถใช้งานได้ ก็เลยได้คิดย้อนไปถึง library หรือ แหล่งเรียนรู้ที่ศึกษา การเป็น open source ไม่ใช่แค่ฟรี หรือไม่ต้องจ่ายเงิน แต่มันคือการเปิดเผยและส่งต่อความรู้ ลองคิดดูสิว่าจะเป็นยังไงถ้า 90% ของความรู้บนโลกถูกจำกัดไว้สำหรับคนกลุ่มน้อยเท่านั้น"]
+            "answer": [
+                "ช่วงที่ศึกษาอะไรต่างๆ เกี่ยวกับการเขียนโปรแกรม เขียนเว็บไซต์ ก็ค่อนข้างจะเจอบ่อยในส่วนที่เป็น library ซึ่งส่วนใหญ่เป็น open source โดยเฉพาะกับ Node.js นอกจากนั้น แหล่งที่ศึกษานั้นแทบทั้งหมดเป็นแหล่งเรียนรู้ที่ไม่เสียเงิน ไม่ว่าจะเป็นบน Youtube หรือ blog ตามเว็บไซต์ต่างๆ แต่สิ่งที่ทำให้สนใจ open source มากๆ เลยคือการได้เจอกับ Linux เพราะด้วยที่ว่าเป็น open source ทำให้มันฟรี แต่ที่มากกว่านั้นคือ มันมีประสิทธิภาพ ความสมเหตุสมผล ความอิสระในการเลือกใช้หรือปรับเปลี่ยน และที่มากไปกว่านั้นคือมันเป็นของเราทุกคน ทุกคนสามารถมีส่วนร่วมในการพัฒนา ทุกคนสามารถใช้งานได้ ก็เลยได้คิดย้อนไปถึง library หรือ แหล่งเรียนรู้ที่ศึกษา การเป็น open source ไม่ใช่แค่ฟรี หรือไม่ต้องจ่ายเงิน แต่มันคือการเปิดเผยและส่งต่อความรู้ ลองคิดดูสิว่าจะเป็นยังไงถ้า 90% ของความรู้บนโลกถูกจำกัดไว้สำหรับคนกลุ่มน้อยเท่านั้น"
+            ]
         },
         {
             "question": "ทำไมถึงใช้ Linux?",
@@ -24,8 +26,94 @@
     ],
     "music": [
         {
-            "name": "",
-            "link": ""
+            "name": "movie soundtrack",
+            "link": "https://youtu.be/-HDlYRmAxI4",
+            "youtube_id": "-HDlYRmAxI4"
+        },
+        {
+            "name": "canon in d",
+            "link": "https://youtu.be/RBx-Ue28KUE",
+            "youtube_id": "RBx-Ue28KUE"
+        },
+        {
+            "name": "Again",
+            "link": "https://youtu.be/OnkmC5qZqRE",
+            "youtube_id": "OnkmC5qZqRE"
+        },
+        {
+            "name": "Saint-Saëns Introduction and Rondo Capriccioso, Op.28",
+            "link": "https://youtu.be/uuFkm95ts4c",
+            "youtube_id": "uuFkm95ts4c"
+        },
+        {
+            "name": "Love's sorrow",
+            "link": "https://youtu.be/PW5PBQp1oxw",
+            "youtube_id": "PW5PBQp1oxw"
+        },
+        {
+            "name": "Salut d'Amour, E. Elgar",
+            "link": "https://youtu.be/GoUuozWmoFM",
+            "youtube_id": "GoUuozWmoFM"
+        },
+        {
+            "name": "Orange",
+            "link": "https://youtu.be/O48gok_FLCg",
+            "youtube_id": "O48gok_FLCg"
+        },
+        {
+            "name": " ぼくは明日、昨日のきみとデートする",
+            "link": "https://youtu.be/HPEpJ7O3qpE",
+            "youtube_id": "HPEpJ7O3qpE"
+        },
+        {
+            "name": "Himawari",
+            "link": "https://youtu.be/Ru2k4pRT8WE",
+            "youtube_id": "Ru2k4pRT8WE"
+        },
+        {
+            "name": "Himitsu",
+            "link": "https://youtu.be/Vawlw-k7Xy8",
+            "youtube_id": "Vawlw-k7Xy8"
+        },
+        {
+            "name": "Happy end",
+            "link": "https://youtu.be/T8y_RsF4TSw",
+            "youtube_id": "T8y_RsF4TSw"
+        },
+        {
+            "name": "Last scene",
+            "link": "https://youtu.be/3kTIpD2VmCM",
+            "youtube_id": "3kTIpD2VmCM"
+        },
+        {
+            "name": "Hikarunara",
+            "link": "https://youtu.be/UpmSK1GPlBc",
+            "youtube_id": "UpmSK1GPlBc"
+        },
+        {
+            "name": "remember",
+            "link": "https://youtu.be/cjkYtafI5ks",
+            "youtube_id": "cjkYtafI5ks"
+        },
+        {
+            "name": "Hello",
+            "link": "https://youtu.be/lNvBbh5jDcA",
+            "youtube_id": "lNvBbh5jDcA"
+        },
+        {
+            "name": "Feel my rhythm",
+            "link": "https://youtu.be/R9At2ICm4LQ",
+            "youtube_id": "R9At2ICm4LQ"
+        },
+        {
+            "name": "Umpah Umpah",
+            "link": "https://youtu.be/vHS9E6JFja8",
+            "youtube_id": "vHS9E6JFja8"
+        },
+        {
+            "name": "Queendom",
+            "link": "https://youtu.be/c9RzZpV460k",
+            "youtube_id": "c9RzZpV460k"
         }
     ]
 }
