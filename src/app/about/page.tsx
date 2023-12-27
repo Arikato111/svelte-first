@@ -5,7 +5,7 @@ export default function About() {
     return <div className='mb-10 box bg-gray-50 rounded-lg pt-3 pb-10'>
         <div className='my-10 text-center'>
             <h3 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>About me</h3>
-            <h4 className='texl-lg sm:text-xl md:text-2xl'>Let's get to know me better</h4>
+            <h4 className='texl-lg sm:text-xl md:text-2xl'>Let&apos;s get to know me better</h4>
         </div>
         <div className="text-center">
             <Image className="shadow inline-block rounded-lg" src={"https://avatars.githubusercontent.com/u/96001130?v=4"} alt="profile" width={300} height={300} />

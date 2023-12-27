@@ -24,7 +24,7 @@ export default function Music() {
         </div>
         <div className="text-center md:grid grid-cols-2">
             {AboutMeData.music.map((music, idx) => (
-                <div className='text-center mb-10'>
+                <div key={idx} className='text-center mb-10'>
                     <div className='text-center'>
                         {musicOn == idx ?
                             <YoutubeIframe youtube_id={music.youtube_id} />
