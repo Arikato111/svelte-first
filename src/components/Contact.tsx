@@ -8,20 +8,20 @@ export default function Contact() {
             <h4 className='text-lg sm:text-xl md:text-2xl'>social media, source code and others</h4>
         </div>
         <div className='flex justify-center items-center'>
-            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://github.com/Arikato111" target='_blank'>
+            <a className='menu-link' href="https://github.com/Arikato111" target='_blank'>
                 <FaGithub className="size-10 md:size-14" size={58} />
             </a>
-            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://www.linkedin.com/in/nawasan/" target='_blank'>
+            <a className='menu-link' href="https://www.linkedin.com/in/nawasan/" target='_blank'>
                 <FaLinkedin className="size-10 md:size-14" size={58} />
             </a>
-            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="mailto:contact@nawasan.dev" target='_blank'>
+            <a className='menu-link' href="mailto:contact@nawasan.dev" target='_blank'>
                 <MdMail className="size-10 md:size-14" size={58} />
             </a>
 
-            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://youtube.com/@Arikato111" target='_blank'>
+            <a className='menu-link' href="https://youtube.com/@Arikato111" target='_blank'>
                 <FaYoutube className="size-10 md:size-14" size={58} />
             </a>
-            <a className='mx-1 md:mx-3 hover:scale-105 duration-150' href="https://www.npmjs.com/~arikato111" target='_blank'>
+            <a className='menu-link' href="https://www.npmjs.com/~arikato111" target='_blank'>
                 <FaNpm className="size-10 md:size-14" size={58} />
             </a>
 
