@@ -16,9 +16,9 @@ export default function Projects() {
                     </div>
                     <div className={`flex-1 px-3 ${idx % 2 !== 0 ? "sm:text-right" : ""}`}>
                         <a className='hover:underline' target='_blank' href={project.source}>
-                            <h4 className='my-3 text-slate-800 text-3xl font-bold'>{project.title}</h4>
+                            <h4 className='my-3 text-slate-800 dark:text-slate-200 text-3xl font-bold'>{project.title}</h4>
                         </a>
-                        <div>{project.descript}</div>
+                        <div className='dark:text-slate-300'>{project.descript}</div>
                     </div>
                 </div>
             ))}

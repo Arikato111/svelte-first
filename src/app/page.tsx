@@ -15,20 +15,20 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <div className='box-lg'>
+    <main className='dark:bg-black'>
+      <div className='box-lg dark:bg-black dark:text-white'>
         <Banner />
       </div>
       <Image className="mt-5 mb-20 object-cover h-[400px] w-[100vw]" src={"/j2.jpg"} alt='sky' width={1000} height={600} />
-      <div className='bg-gray-50'>
+      <div className='bg-gray-50 bg-dark dark:text-white'>
         <div className='box'>
           <Certificates />
         </div>
       </div>
-      <div className="box">
+      <div className="box dark:bg-black text-white">
         <Projects />
       </div>
-      <div className='bg-gray-50'>
+      <div className='bg-gray-50 bg-dark dark:text-slate-200'>
         <div className='box'>
           <Contact />
         </div>

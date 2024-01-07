@@ -5,7 +5,7 @@ import { MdMenu } from "react-icons/md";
 
 export default function Navbar() {
     const [dropdown, setDropdown] = useState(false)
-    return <header className="shadow sticky top-0 z-50 bg-white dark:bg-black dark:border-b dark:border-slate-800">
+    return <header className="shadow sticky top-0 z-50 bg-white bg-dark dark:border-b-2 dark-line">
         <nav className="h-14 flex flex-col md:flex-row items-start md:items-center px-5 max-w-[1200px] mx-auto">
             <div className="h-full md:h-auto">
                 <Link href={'/'} className="h-14 md:h-auto flex font-bold"  onClick={() => setDropdown(false)}>

@@ -16,7 +16,7 @@
         @apply  pt-10 pb-20;
     }
     .menu-link {
-        @apply border-2 border-black  p-1 rounded-lg mx-1 md:mx-2 duration-300 hover:mx-3 hover:scale-110;
+        @apply border-2 border-black dark:border-slate-200  p-1 rounded-lg mx-1 md:mx-2 duration-300 hover:mx-3 hover:scale-110;
     }
 }
 
@@ -38,4 +38,14 @@ footer {
     bottom: 0;
     width: 100%;
     min-height: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bg-dark {
+        background-color: #0a0a0a;
+    }
+    .dark-line {
+        border-color: #242424;
+    }
+
 }
