@@ -18,7 +18,7 @@ export default async function CertificateId({ params }: { params: { id: string }
                 </div>
             </div>
             <div className='text-center mt-10'>
-                <a className='border-2 hover:bg-black hover:text-white duration-300 border-black py-2 px-5 rounded-sm font-bold' href={cer.link} target='_blank'>source</a>
+                <a className='border-2 hover:bg-black hover:text-white duration-300 border-black dark:border-white dark:hover:bg-white dark:hover:text-black py-2 px-5 rounded-sm font-bold' href={cer.link} target='_blank'>source</a>
             </div>
         </main>
     </>
