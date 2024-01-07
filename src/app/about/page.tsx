@@ -2,7 +2,7 @@ import Image from "next/image"
 import AboutMeData from '../../data/AboutMe.json'
 
 export default function About() {
-    return <div className='mb-10 box bg-gray-50 rounded-lg pt-3 pb-10'>
+    return <div className='mb-10 box bg-gray-50 dark:bg-zinc-950 dark:text-slate-200 rounded-lg pt-3 pb-10'>
         <div className='my-10 text-center'>
             <h3 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>About me</h3>
             <h4 className='texl-lg sm:text-xl md:text-2xl'>Let&apos;s get to know me better</h4>

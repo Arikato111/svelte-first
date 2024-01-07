@@ -13,7 +13,7 @@
         @apply mx-3 font-medium block bg-white dark:bg-black dark:text-white text-center py-3 md:py-0 md:w-auto md:inline;
     }
     .frame {
-        @apply  pt-10 pb-20;
+        @apply  pt-10 pb-20 dark:bg-black dark:text-slate-200;
     }
     .menu-link {
         @apply border-2 border-black dark:border-slate-200  p-1 rounded-lg mx-1 md:mx-2 duration-300 hover:mx-3 hover:scale-110;
@@ -41,6 +41,9 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
     .bg-dark {
         background-color: #0a0a0a;
     }

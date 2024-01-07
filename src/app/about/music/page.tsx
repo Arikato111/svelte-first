@@ -17,7 +17,7 @@ const YoutubeIframe = ({ youtube_id }: { youtube_id: string }) => {
 
 export default function Music() {
     const [musicOn, setMusicOn] = useState(-1)
-    return <div className='mb-10 box  pt-3 pb-10'>
+    return <div className='mb-10 box  pt-3 pb-10 dark:text-slate-200'>
         <div className='my-10 text-center'>
             <h3 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>Music</h3>
             <h4 className='texl-lg sm:text-xl md:text-2xl'>My favorite or like music</h4>

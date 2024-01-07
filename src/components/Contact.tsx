@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaLinkedinIn, FaNpm, FaYoutube, FaYoutubeSquare }
 import { MdMail } from 'react-icons/md'
 
 export default function Contact() {
-    return <div className="frame">
+    return <div className="frame bg-dark">
         <div className='my-10 text-center'>
             <h3 className='font-bold text-2xl sm:text-3xl md:text-5xl'>My Contacts</h3>
             <h4 className='text-lg sm:text-xl md:text-2xl'>social media, source code and others</h4>
