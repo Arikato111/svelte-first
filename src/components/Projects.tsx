@@ -24,7 +24,7 @@ export default function Projects() {
             ))}
         </div>
         <div className='text-center'>
-            <Link className='border-2 hover:bg-black hover:text-white duration-300 border-black py-2 px-5 rounded-sm font-bold' href={"/projects"}>more</Link>
+            <Link className='border-2 hover:bg-black hover:text-white duration-300 border-black dark:border-white dark:hover:bg-white  text-black dark:text-slate-200 dark:hover:text-black py-2 px-5 rounded-sm font-bold' href={"/projects"}>more</Link>
         </div>
 
     </div>
