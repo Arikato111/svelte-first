@@ -20,6 +20,12 @@
     }
 }
 
+@layer base {
+    a {
+        @apply hover:text-purple-400;
+    }
+}
+
 body {
     padding: 0;
     margin: 0;
