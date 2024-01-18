@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Social media with php",
         "descript": "aden คือแพลตฟอร์มสำหรับผู้ที่อยากพูดคุยสื่อสารกับคนอื่นๆ อย่างเรียบง่ายและไม่ซับซ้อน",
-        "link": "https://aden.anytion.com",
+        "link": "",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Faden.png?alt=media",
         "source": "https://github.com/Arikato111/social-web-php"
     },
@@ -11,7 +11,7 @@
         "id": 1,
         "title": "packages for php",
         "descript": "package.anytion is the open-source library & template repository to install on your PHP project by control",
-        "link": "https://package.anytion.com/",
+        "link": "",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Fpackages.png?alt=media",
         "source": "https://github.com/Anytion-go/package-web-php"
     },

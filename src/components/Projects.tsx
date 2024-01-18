@@ -10,7 +10,7 @@ export default function Projects() {
         </div>
         <div>
             {ProjectsData.map((project, idx) => idx < 3 && (
-                <div key={idx} className={`my-20 px-5 ${idx % 2 !== 0 ? "flex-row-reverse": "flex-row"} md:flex`}>
+                <div key={idx} className={`my-20 px-5 ${idx % 2 !== 0 ? "flex-row-reverse" : "flex-row"} md:flex`}>
                     <div className='px-3 relative flex-1'>
                         <Image className='w-full rounded-lg object-fill shadow' src={project.img} alt={project.title} width={400} height={300} title={project.title} />
                     </div>
@@ -19,6 +19,10 @@ export default function Projects() {
                             <h4 className='my-3 text-slate-800 dark:text-slate-200 text-3xl font-bold'>{project.title}</h4>
                         </a>
                         <div className='dark:text-slate-300 text-black'>{project.descript}</div>
+                        {project.link.length &&
+                            <div className='my-3 underline'><a href={project.link} target='_blank'>preview</a></div>
+                        }
+
                     </div>
                 </div>
             ))}

@@ -28,6 +28,9 @@ export default function ProjectsPage() {
                                     <h4 className='my-3 text-slate-800 dark:text-slate-200 text-3xl font-bold'>{project.title}</h4>
                                 </a>
                                 <div className='dark:text-slate-300'>{project.descript}</div>
+                                {project.link.length && 
+                                <div className='my-3 underline'><a href={project.link} target='_blank'>preview</a></div>
+                                }
                             </div>
                         </div>
                     ))}
