@@ -25,7 +25,7 @@ export default function Home() {
           <Certificates />
         </div>
       </div>
-      <div className="box dark:bg-black text-white">
+      <div className="box dark:bg-black text-black">
         <Projects />
       </div>
       <div className='bg-gray-50 bg-dark dark:text-slate-200'>
