@@ -5,6 +5,7 @@ import Projects from '@/components/Projects'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import { DefaultMetaTag } from '@/components/MetaTag'
+import ThreeWords from '@/components/ThreeWords'
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,12 @@ export default function Home() {
         <Banner />
       </div>
       <Image className="mt-5 mb-20 object-cover h-[400px] w-[100vw]" src={"/j2.jpg"} alt='sky' width={1000} height={600} />
+      <div className='bg-gray-50 bg-dark dark:text-slate-200'>
+        <div className='box'>
+          <Contact />
+        </div>
+      </div>
+      <ThreeWords />
       <div className='bg-gray-50 bg-dark dark:text-white'>
         <div className='box'>
           <Certificates />
@@ -27,11 +34,6 @@ export default function Home() {
       </div>
       <div className="box dark:bg-black text-black">
         <Projects />
-      </div>
-      <div className='bg-gray-50 bg-dark dark:text-slate-200'>
-        <div className='box'>
-          <Contact />
-        </div>
       </div>
     </main>
   )
