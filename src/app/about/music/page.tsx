@@ -4,7 +4,7 @@ import AboutMeData from '../../../data/AboutMe.json'
 
 const YoutubeIframe = ({ youtube_id }: { youtube_id: string }) => {
     return <iframe
-    className='mx-auto'
+        className='mx-auto'
         width="360"
         height="200"
         src={`https://www.youtube.com/embed/${youtube_id}?vq=medium&loop=1&modestbranding=0`}
@@ -15,13 +15,9 @@ const YoutubeIframe = ({ youtube_id }: { youtube_id: string }) => {
     />
 }
 
-export default function Music() {
+function MusicControl() {
     const [musicOn, setMusicOn] = useState(-1)
-    return <div className='mb-10 box  pt-3 pb-10 dark:text-slate-200'>
-        <div className='my-10 text-center'>
-            <h3 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>Music</h3>
-            <h4 className='texl-lg sm:text-xl md:text-2xl'>My favorite or like music</h4>
-        </div>
+    return (
         <div className="text-center md:grid grid-cols-2">
             {AboutMeData.music.map((music, idx) => (
                 <div key={idx} className='text-center mb-10'>
@@ -29,13 +25,24 @@ export default function Music() {
                         {musicOn == idx ?
                             <YoutubeIframe youtube_id={music.youtube_id} />
                             :
-                            <img  onClick={() => setMusicOn(idx)} className='hover:cursor-pointer inline-block rounded-lg object-cover w-[360px] h-[200px] shadow' width={360} height={200} src={`https://i.ytimg.com/vi/${music.youtube_id}/hqdefault.jpg`} alt="" />
+                            <img onClick={() => setMusicOn(idx)} className='hover:cursor-pointer inline-block rounded-lg object-cover w-[360px] h-[200px] shadow' width={360} height={200} src={`https://i.ytimg.com/vi/${music.youtube_id}/hqdefault.jpg`} alt="" />
                         }
                     </div>
                     <div className='py-1'><a className='hover:underline' href={music.link} target='_blank'>{music.name}</a></div>
                 </div>
             ))}
         </div>
+
+    )
+}
+
+export default function Music() {
+    return <div className='mb-10 box  pt-3 pb-10 dark:text-slate-200'>
+        <div className='my-10 text-center'>
+            <h3 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>Music</h3>
+            <h4 className='texl-lg sm:text-xl md:text-2xl'>My favorite or like music</h4>
+        </div>
+        <MusicControl />
     </div>
 
 }
