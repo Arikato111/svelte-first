@@ -1,9 +1,16 @@
+import ErrorPage from '@/app/not-found'
 import CertificatesData from '../../../data/CertificatesData.json'
 import Image from 'next/image'
 
+export async function generateStaticParams() {
+    return CertificatesData.map((cer) => ({
+        id: `${cer.id}`,
+    }))
+}
+
 export default async function CertificateId({ params }: { params: { id: string } }) {
     const cer = CertificatesData.filter(c => c.id == Number(params.id))[0]
-
+    if (!cer) return <ErrorPage />
     return <>
         <main className='frame dark:bg-black dark:text-slate-200'>
             <div className='my-10 text-center'>
@@ -22,12 +29,3 @@ export default async function CertificateId({ params }: { params: { id: string }
     </>
 }
 
-export async function getStaticPaths() {
-    const paths = CertificatesData.map(cer => {
-        return { params: { id: cer.id.toString() } }
-    })
-    return {
-        paths,
-        fallback: false,
-    }
-}
