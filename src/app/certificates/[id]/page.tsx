@@ -26,7 +26,6 @@ export async function getStaticPaths() {
     const paths = CertificatesData.map(cer => {
         return { params: { id: cer.id.toString() } }
     })
-    console.log(paths);
     return {
         paths,
         fallback: false,
