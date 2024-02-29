@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default function ErrorPage() {
     return <main className="flex flex-col h-[80vh] justify-center items-center">
-        <TbZoomQuestion size={58} /> 
-        <div className="text-4xl">Not found this page</div>
-        <div><Link className="text-xl hover:underline" href={'/'}>go to home</Link></div>
+        <TbZoomQuestion size={58} />
+        <div className="text-4xl dark:text-white">Not found this page</div>
+        <div><Link className="text-xl hover:underline dark:text-white" href={'/'}>go to home</Link></div>
     </main>
 }
