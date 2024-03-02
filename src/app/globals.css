@@ -26,6 +26,17 @@
     }
 }
 
+.question-content {
+    height: 0;
+}
+.question-action:focus + .question-content {
+    height: auto;
+}
+
+.question-action:focus .question-point {
+    transform: rotate(90deg);
+}
+
 body {
     padding: 0;
     margin: 0;
