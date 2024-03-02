@@ -1,7 +1,7 @@
 <p align="center">
 <img align="center" alt="Nextjs" height="30" width="40" src="https://github.com/Arikato111/Arikato111/raw/main/icons/nextjs-original.svg">
 <img align="center" alt="Typescript" height="30" width="40" src="https://github.com/Arikato111/Arikato111/raw/main/icons/typescript-original.svg">
-  <img align="center" alt="Svelte" height="30" width="40" src="https://raw.githubusercontent.com/Arikato111/Arikato111/main/icons/tailwindcss-plain.svg">
+  <img align="center" alt="Tailwindcss" height="30" width="40" src="https://raw.githubusercontent.com/Arikato111/Arikato111/main/icons/tailwindcss-plain.svg">
 </p>
 
 # <p align="center">My Simple introduction</p>
