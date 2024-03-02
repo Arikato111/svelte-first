@@ -35,4 +35,9 @@ const nextConfig = {
   },
 };
 
+if (process.env.HTML) {
+  nextConfig.output = "export";
+  nextConfig.images.unoptimized = true;
+}
+
 module.exports = nextConfig;
