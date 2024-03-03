@@ -8,7 +8,7 @@ export default function QuestionsPage() {
         <h3 className='font-bold text-2xl sm:text-3xl'>คำถาม</h3>
         {AboutMeData.questions.map((que, idx) => (
             <div className='mt-5 hover:cursor-pointer' key={idx}>
-                <a href='#' className='font-bold text-lg flex items-center question-action'>
+                <a tabIndex={idx} href='#' className='font-bold text-lg flex items-center question-action'>
                     <span className={"duration-300 question-point"}>
                         <GrFormNext size={28} />
                     </span>
