@@ -10,7 +10,16 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
       </head>
       <body>
         <Navbar />
-       {children}
+        {!process.env.HTML &&
+          (
+            <noscript>
+              <meta httpEquiv="refresh" content="2; URL=https://html.nawasan.dev" />
+              <div className='fixed w-full h-[100vh] top-0 z-[100] bg-white'>
+                <h1 className='md:text-6xl text-center'>redirect to no script page</h1>
+              </div>
+            </noscript>
+          )}
+        {children}
         <Footer />
       </body>
     </html>
