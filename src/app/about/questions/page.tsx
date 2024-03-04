@@ -1,5 +1,3 @@
-"use client"
-import { useState } from 'react';
 import AboutMeData from '../../../data/AboutMe.json'
 import { GrFormNext } from "react-icons/gr";
 
