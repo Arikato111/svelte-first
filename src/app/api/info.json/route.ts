@@ -1,6 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import Certificates from "../../../data/CertificatesData.json";
 import Projects from "../../../data/ProjectsData.json";
+import AboutMe from "../../../data/AboutMe.json";
 
 type language = {
   id: number;
@@ -62,17 +62,7 @@ const tools = [
 ];
 export function GET() {
   return Response.json({
-    name: "Nawasan Wisitsingkhon",
-    contact: {
-      github: "https://github.com/Arikato111",
-      linkedin: "https://www.linkedin.com/in/nawasan/",
-      youtube: "https://youtube.com/@Arikato111",
-    },
-    education: {
-      name: "Ubon Ratchathani University",
-      faculty: "Science",
-      major: "information and communication technology",
-    },
+    ...AboutMe,
     skills: {
       languages,
       tools,

@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <div className="text-center my-3">
             <div className="font-bold text-lg my-4">
-                ชื่อ {AboutMeData.name}
+                ชื่อ {AboutMeData.thai_name}
             </div>
             <div className="whitespace-normal px-3">
                 {AboutMeData.detail}
