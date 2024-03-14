@@ -4,6 +4,7 @@ import Image from 'next/image'
 import CertificatesData from '../data/CertificatesData.json'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from 'react'
+import PopupPreview from './PopupPreview'
 
 export function Certificates() {
     const [selectId, setSelectId] = useState("");
@@ -29,16 +30,14 @@ export function Certificates() {
                 </div>
             ))}
             <AnimatePresence>
-                {selectId.length && CertificatesData.map((cer, idx) => cer.id == Number(selectId) && (
-                    <div onClick={() => setSelectId("")} key={selectId} className='fixed flex justify-center items-center w-full h-[100vh] top-0 left-0 z-50 bg-zinc-300/60 bg-blur'>
-                        <style>{`body { overflow: hidden; } `}</style>
-
+                {!!selectId.length && CertificatesData.map((cer, idx) => cer.id == Number(selectId) && (
+                    <PopupPreview key={idx} onCancel={() => setSelectId("")}>
                         <motion.div layoutId={`${cer.id}`} key={idx} className='w-full lg:w-[50vw]'
                             onClick={() => setSelectId(`${cer.id}`)}
                         >
                             <Image className='w-full rounded-lg object-fill shadow' src={cer.img.high} alt={cer.title} width={400} height={300} title={cer.type} />
                         </motion.div>
-                    </div>
+                    </PopupPreview>
                 ))}
             </AnimatePresence>
         </div>
