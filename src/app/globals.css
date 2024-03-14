@@ -10,7 +10,7 @@
         @apply max-w-[850px] mx-auto;
     }
     .nav-link {
-        @apply mx-3 font-medium block bg-white dark:bg-black dark:text-white text-center py-3 md:py-0 md:w-auto md:inline;
+        @apply mx-3 font-medium block dark:text-white text-center py-3 md:py-0 md:w-auto md:inline;
     }
     .frame {
         @apply  pt-10 pb-20 dark:bg-black dark:text-slate-200;

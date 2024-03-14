@@ -19,8 +19,9 @@ export function Certificates() {
                 <div key={idx} className='my-7 px-10 flex items-center flex-col'
                     onClick={() => setSelectId(`${cer.id}`)}
                 >
-                    <motion.div layoutId={`${cer.id}`} >
+                    <motion.div className='cursor-pointer' layoutId={`${cer.id}`}>
                         <Image className='w-full rounded-lg object-fill shadow' src={cer.img.high} alt={cer.title} width={400} height={300} title={cer.type} />
+                        <Image className='hidden' src={cer.img.high} alt={cer.title} width={1920} height={1080} title={cer.type} />
                     </motion.div>
                     <div>
                         <Link href={"/certificates/" + cer.id}>
