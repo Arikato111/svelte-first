@@ -1,9 +1,13 @@
+"use client"
 import Link from 'next/link'
 import Image from 'next/image'
 import CertificatesData from '../data/CertificatesData.json'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useState } from 'react'
 
 export function Certificates() {
-    if(CertificatesData[0].id == 0) CertificatesData.reverse()
+    const [selectId, setSelectId] = useState("");
+    if (CertificatesData[0].id == 0) CertificatesData.reverse()
     return <div className='frame'>
         <div className='my-10 text-center'>
             <h3 className='font-bold text-2xl sm:text-2xl md:text-5xl '>My Certificates</h3>
@@ -11,15 +15,30 @@ export function Certificates() {
         </div>
         <div className='grid md:grid-cols-2'>
             {CertificatesData.map((cer, idx) => idx < 6 && (
-                <div key={idx} className='my-7 px-10 flex items-center flex-col'>
-                    <Link href={"/certificates/" + cer.id}>
+                <div key={idx} className='my-7 px-10 flex items-center flex-col'
+                    onClick={() => setSelectId(`${cer.id}`)}
+                >
+                    <motion.div layoutId={`${cer.id}`} >
                         <Image className='w-full rounded-lg object-fill shadow' src={cer.img.high} alt={cer.title} width={400} height={300} title={cer.type} />
-                    </Link>
+                    </motion.div>
                     <div>
-                        <h4 className='my-3 font-bold'>{cer.title}</h4>
+                        <Link href={"/certificates/" + cer.id}>
+                            <h4 className='my-3 font-bold'>{cer.title}</h4>
+                        </Link>
                     </div>
                 </div>
             ))}
+            <AnimatePresence>
+                {selectId.length && CertificatesData.map((cer, idx) => cer.id == Number(selectId) && (
+                    <div onClick={() => setSelectId("")} key={selectId} className='fixed flex justify-center items-center w-full h-[100vh] top-0 left-0 z-50 bg-zinc-300/60 bg-blur'>
+                        <motion.div layoutId={`${cer.id}`} key={idx} className='w-full lg:w-[50vw]'
+                            onClick={() => setSelectId(`${cer.id}`)}
+                        >
+                            <Image className='w-full rounded-lg object-fill shadow' src={cer.img.high} alt={cer.title} width={400} height={300} title={cer.type} />
+                        </motion.div>
+                    </div>
+                ))}
+            </AnimatePresence>
         </div>
         <div className='text-center'>
             <Link className='border-2 hover:bg-black hover:text-white duration-300 border-black dark:border-white dark:hover:bg-white dark:hover:text-black py-2 px-5 rounded-sm font-bold' href={"/certificates"}>more</Link>
