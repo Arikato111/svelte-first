@@ -7,7 +7,7 @@ export default function Navbar() {
     const [dropdown, setDropdown] = useState(false)
     return <header className="box-lg sticky py-2 top-0 z-50 bg-transparent dark:bg-zinc-950 dark:border-zinc-600 dark:border-b dark-line">
         <nav 
-        className="w-11/12 shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative bg-white/90 rounded-3xl h-14 flex flex-col md:flex-row justify-center items-center md:items-center px-5 max-w-[1200px] mx-auto">
+        className="w-11/12 shadow-[0_8px_30px_rgb(0,0,0,0.12)] relative bg-white/90 backdrop-blur-sm rounded-3xl h-14 flex flex-col md:flex-row justify-center items-center md:items-center px-5 max-w-[1200px] mx-auto">
         {/* <nav className="shadow-[rgba(17,_17,_26,_0.1)_0px_0px_16px] bg-white/90 rounded-3xl h-14 flex flex-col md:flex-row justify-center items-center md:items-center px-5 max-w-[1200px] mx-auto"> */}
             <div className="h-full md:h-auto">
                 <Link href={'/'} className="h-14 md:h-auto flex font-bold" onClick={() => setDropdown(false)}>
