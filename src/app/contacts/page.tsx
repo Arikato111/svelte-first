@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 }
 
 export default function ContactsPage() {
-    return <div className="frame flex flex-col justify-center items-center min-h-[60vh]">
+    return <main className="frame flex flex-col justify-center items-center min-h-[60vh]">
         <div className='my-10 text-center'>
             <h3 className='font-bold text-2xl sm:text-2xl md:text-5xl '>My Contacts</h3>
             <h4 className='text-lg sm:text-xl md:text-2xl'>social media, source code and others</h4>
@@ -30,5 +30,5 @@ export default function ContactsPage() {
                 <FaNpm className="size-10 md:size-14" size={58} />
             </a>
         </div>
-    </div>
+    </main>
 }

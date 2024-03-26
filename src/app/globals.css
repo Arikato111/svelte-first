@@ -32,6 +32,10 @@
     }
 }
 
+main {
+    animation: fadding 1s;
+}
+
 .question-content {
     height: 0;
 }
@@ -74,4 +78,12 @@ footer {
         border-color: #242424;
     }
 
+}
+
+@keyframes fadding {
+    0% {
+        transform: translate(0, 150px);
+    } 100% {
+        transform: translate(0, 0);
+    }
 }

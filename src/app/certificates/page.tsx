@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function CertifacatePage() {
     if (CertificatesData[0].id == 0) CertificatesData.reverse()
-    return <div className='frame dark:bg-black dark:text-slate-200'>
+    return <main className='frame dark:bg-black dark:text-slate-200'>
         <div className='my-10 text-center'>
             <h1 className='font-bold text-3xl sm:text-4xl  md:text-5xl'>My Certificates</h1>
             <h2 className='texl-lg sm:text-xl md:text-2xl'>from studying, competition and others</h2>
@@ -32,5 +32,5 @@ export default function CertifacatePage() {
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 }
