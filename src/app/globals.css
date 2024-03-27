@@ -33,7 +33,7 @@
 }
 
 main {
-    animation: fadding 1s;
+    animation: fadding 2s;
 }
 
 .question-content {
@@ -82,8 +82,8 @@ footer {
 
 @keyframes fadding {
     0% {
-        transform: translate(0, 150px);
+        opacity: 0;
     } 100% {
-        transform: translate(0, 0);
+        opacity: 1;
     }
 }
