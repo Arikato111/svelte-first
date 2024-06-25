@@ -13,13 +13,13 @@ const MenuDropdown: FC<CertificateType> = ({ link }) => {
   return (
     <div className="inline-block cursor-pointer print:hidden">
       <div className="relative">
-        <div className="text-red-800" onClick={() => setIsShow(!isShow)}>
+        <div className="text-red-800 z-20" onClick={() => setIsShow(!isShow)}>
           <ButtonContact Icon={MenuIcon} title="" />
         </div>
 
         <div
-          className={`absolute z-10 duration-500 overflow-hidden ${
-            isShow ? "h-40" : "h-0"
+          className={`absolute z-0 duration-500 overflow-hidden ${
+            isShow ? "scale-100 -translate-y-0" : "scale-0 -translate-y-20"
           }`}
         >
           <div className="grid-cols-2">
