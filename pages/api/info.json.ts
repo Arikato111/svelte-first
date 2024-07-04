@@ -2,6 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import Certificates from "@/Data/CertificatesData.json";
 import Projects from "@/Data/ProjectsData.json";
+import AboutMe from "@/Data/AboutMe.json";
 
 type language = {
   id: number;
@@ -65,17 +66,7 @@ const tools = [
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.status(200).json({
-    name: "Nawasan Wisitsingkhon",
-    contact: {
-      github: "https://github.com/Arikato111",
-      linkedin: "https://www.linkedin.com/in/nawasan/",
-      youtube: "https://youtube.com/@Arikato111",
-    },
-    education: {
-      name: "Ubon Ratchathani University",
-      faculty: "Science",
-      major: "information and communication technology",
-    },
+    ...AboutMe,
     skills: {
       languages,
       tools,
