@@ -2,23 +2,23 @@
     {
         "id": 0,
         "title": "Social media with php",
-        "descript": "aden คือแพลตฟอร์มสำหรับผู้ที่อยากพูดคุยสื่อสารกับคนอื่นๆ อย่างเรียบง่ายและไม่ซับซ้อน",
-        "link": "https://aden.anytion.com",
+        "descript": "โปรเจคทำเว็บโซเชียลมีเดียเบื้อนต้น ด้วยภาษา PHP และฐานข้อมูล MySQL โดยมีโครงสร้างการเขียน PHP ที่ต่างออกไป",
+        "link": "",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Faden.png?alt=media",
         "source": "https://github.com/Arikato111/social-web-php"
     },
     {
         "id": 1,
         "title": "packages for php",
-        "descript": "package.anytion is the open-source library & template repository to install on your PHP project by control",
-        "link": "https://package.anytion.com/",
+        "descript": "เป็นโปรเจคเกี่ยวกับการทำเว็บไซต์สำหรับเก็บ library และ template สำหรับการใช้ command line program ติดตั้ง สำหรับ PHP",
+        "link": "",
         "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Fpackages.png?alt=media",
         "source": "https://github.com/Anytion-go/package-web-php"
     },
     {
         "id": 2,
         "title": "what to read",
-        "descript": "ไม่รู้จะอ่านอะไร เลือกไม่ออก บอกไม่ถูก งั้น สุ่มเลือกเอาละกัน!",
+        "descript": "คลังเก็บหนังสือที่น่าสนใจ หรือแนะนำให้อ่าน พร้อมกับระบบสุ่มรายการหนังสือ เผื่อว่าเลือกไม่ถูก ตัดสินใจไม่ได้",
         "link": "https://what-to-read-nu.vercel.app/",
         "img": "https://what-to-read-nu.vercel.app/example.png",
         "source": "https://github.com/Arikato111/what-to-read"
@@ -46,5 +46,29 @@
         "link": "https://next-food-random.vercel.app",
         "img": "https://next-food-random.vercel.app/example-page.png",
         "source": "https://github.com/Arikato111/next-food-random"
+    },
+    {
+        "id": 6,
+        "title": "Find subnet mask",
+        "descript": "โปรแกรม command line คำนวณหา subnet mask เขียนด้วยภาษา Rust",
+        "link": "",
+        "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Ffine_subnet.png?alt=media",
+        "source": "https://github.com/Arikato111/find_subnet"
+    },
+    {
+        "id": 7,
+        "title": "lad theme firefox",
+        "descript": "ธีมสำหรับ firefox browser พร้อมทั้งสำหรับ light mode และ dark mode ในธีมเดียว",
+        "link": "https://addons.mozilla.org/en-US/firefox/addon/lad-light-and-dark-theme/",
+        "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Flad_theme_firefox.png?alt=media",
+        "source": "https://github.com/Arikato111/lad-theme-firefox"
+    },
+    {
+        "id": 8,
+        "title": "publish files",
+        "descript": "เว็บไซต์สำหรับเก็บและเผยแพร่ไฟล์ เขียนด้วย React เชื่อมต่อกับ Firebase",
+        "link": "https://source.nawasan.dev",
+        "img": "https://firebasestorage.googleapis.com/v0/b/dotme-45a79.appspot.com/o/image%2Fprojects%2Fpublish-file.png?alt=media",
+        "source": "https://github.com/Arikato111/publish-files"
     }
 ]
