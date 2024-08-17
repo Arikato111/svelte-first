@@ -23,9 +23,9 @@ export default function Projects() {
           My open source projects
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 text-center p-3 justify-items-center">
-          {ProjectData.map((project) => (
+          {ProjectData.map((project, idx) => (
             <ProjectCard
-              key={project.id}
+              key={idx}
               title={project.title}
               descript={project.descript}
               src={project.img}
