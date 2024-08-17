@@ -7,6 +7,27 @@ import { decryptText } from "@/components/lib";
 
 type MessageProps = { isFlowerFall: boolean };
 
+function ButtonBack() {
+  return <Link href="/">
+    <div
+      className={`bg-pink-300 dark:bg-slate-900 hover:scale-100
+                   hover:bg-pink-300/90 
+          hover:shadow-pink-100 border-pink-100 duration-300
+           text-white dark:text-slate-200
+          fill-white  dark:fill-slate-200 flex justify-center 
+            items-center rounded-lg border-2 py-1 px-3 font-medium
+          dark:border-slate-200 dark:hover:bg-gray-700 m-1 
+            shadow-md hover:shadow-lg dark:hover:shadow-gray-700 shadow-gray-300 dark:shadow-none`}
+    >
+      <span className="inline-block w-8 mx-1">
+        <ArrowIcon />
+      </span>
+      <span>back</span>
+    </div>
+  </Link>
+
+}
+
 export default function Novel({ isFlowerFall }: MessageProps) {
   console.log(isFlowerFall);
   const message =
@@ -17,26 +38,11 @@ export default function Novel({ isFlowerFall }: MessageProps) {
       <>
         <Head>
           <DefaultMetaTag />
-         <title>Message | Arikato111</title>
+          <title>Message | Arikato111</title>
         </Head>
-        <main className="main bg-yellow-100/40">
+        <main className="main bg-yellow-100/40 dark:bg-black">
           <div className="inline-block">
-            <Link href="/">
-              <div
-                className={`bg-pink-300 hover:scale-100 hover:bg-pink-300/90 
-          hover:shadow-pink-100 border-pink-100 duration-300
-          dark:bg-slate-900 text-white dark:text-slate-200
-          fill-white  dark:fill-slate-200 flex justify-center 
-            items-center rounded-lg border-2 py-1 px-3 font-medium
-          dark:border-slate-200 dark:hover:bg-gray-700 m-1 
-            shadow-md hover:shadow-lg shadow-gray-300 dark:shadow-none`}
-              >
-                <span className="inline-block w-8 mx-1">
-                  <ArrowIcon />
-                </span>
-                <span>back</span>
-              </div>
-            </Link>
+            <ButtonBack />
           </div>
 
           <div className="pt-10 p-3">
@@ -62,26 +68,11 @@ export default function Novel({ isFlowerFall }: MessageProps) {
       <>
         <Head>
           <DefaultMetaTag />
-         <title>Message | Arikato111</title>
+          <title>Message | Arikato111</title>
         </Head>
-        <main className="main bg-yellow-100/40">
+        <main className="main bg-yellow-100/40 dark:bg-black">
           <div className="inline-block">
-            <Link href="/">
-              <div
-                className={`bg-pink-300 hover:scale-100 hover:bg-pink-300/90 
-          hover:shadow-pink-100 border-pink-100 duration-300
-          dark:bg-slate-900 text-white dark:text-slate-200
-          fill-white  dark:fill-slate-200 flex justify-center 
-            items-center rounded-lg border-2 py-1 px-3 font-medium
-          dark:border-slate-200 dark:hover:bg-gray-700 m-1 
-            shadow-md hover:shadow-lg shadow-gray-300 dark:shadow-none`}
-              >
-                <span className="inline-block w-8 mx-1">
-                  <ArrowIcon />
-                </span>
-                <span>back</span>
-              </div>
-            </Link>
+            <ButtonBack />
           </div>
 
           <div className="pt-10 p-3">

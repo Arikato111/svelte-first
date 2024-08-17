@@ -47,7 +47,7 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
         <DefaultMetaTag />
         <title>Arikato111</title>
       </Head>
-      <main className={`main-flex ${isFlowerFall ? "bg-transparent" : ""}`}>
+      <main className={`main-flex ${isFlowerFall ? "bg-transparent dark:bg-current" : ""}`}>
         {isFlowerFall && (
           <div className="absolute -z-20 w-screen h-screen bg-cover opacity-80 bg-beautiful dark:hidden"></div>
         )}

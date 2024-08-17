@@ -33,7 +33,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
           </h3>
           <div className="dark:text-white">
             <div className="px-3">{descript}</div>
-            <div className="link-contact lg:h-0 overflow-hidden duration-500 bottom-1 absolute my-1 w-full">
+            <div className="link-contact overflow-hidden duration-500 bottom-1 absolute my-1 w-full">
               {
                 link.length > 0 &&
                 <a

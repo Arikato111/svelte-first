@@ -10,11 +10,14 @@ const Banner: FC<BannerProps> = ({ isSwiching }) => {
         {isSwiching ?
             (<>
                 ぼくの名前は <span className="text-purple-700 use-font font-bold"
-                ><Link href={'/message'}><span className="my-name">ナワサン。</span></Link></span
-                ><span className="tree inline-block duration-300 ease-in-out transition"><span>🌳</span></span>
+                ><Link href={'/message'}><span className="dark:text-red-600">ナワサン。</span></Link></span
+                ><span className="tree inline-block duration-300 ease-in-out transition">
+                    <span className="inline dark:hidden">🌳</span>
+                    <span className="hidden dark:inline">🌹</span>
+                </span>
             </>) :
             (<>
-                Hello!, I&apos;m <h1 className="inline my-name text-purple-700 use-font font-bold changename"
+                Hello!, I&apos;m <h1 className="inline dark:text-red-600 text-purple-700 use-font font-bold changename"
                 ><span>Arikato111</span></h1
                 ><span
                     className="inline-block hover:rotate-45 duration-300 ease-in-out transition"

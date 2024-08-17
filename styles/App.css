@@ -12,9 +12,6 @@
   display: none;
 }
 
-.dark .my-name {
-  color: red;
-}
 .changename:hover::before {
   content: "Nawasan ";
 }
@@ -26,14 +23,10 @@
   background-repeat: no-repeat, repeat;
 }
 
-.dark .sakura {
-  background: red !important;
-}
-.dark .tree::before {
-  content: "🌹";
-}
-.dark .tree span {
-  display: none;
+@media (prefers-color-scheme: dark) {
+  .sakura {
+    background: red !important;
+  }
 }
 
 @media print {

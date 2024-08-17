@@ -15,7 +15,7 @@ const ButtonContact: FC<ButtonContactInput> = ({ title, Icon, Class }) => {
     items-center rounded-lg border-2 py-1 px-3 font-medium
      border-white dark:border-slate-200 
      dark:hover:bg-gray-700 m-1 hover:scale-105
-     shadow hover:shadow-lg hover:shadow-gray-300 shadow-gray-400 dark:shadow-none`}
+     shadow hover:shadow-lg hover:shadow-gray-300 dark:hover:shadow-gray-700 shadow-gray-400 dark:shadow-none`}
     >
       <span className="inline-block w-8 mx-1">
         <Icon />
