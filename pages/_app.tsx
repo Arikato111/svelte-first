@@ -46,8 +46,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/icons/Na.svg" type="image/svg+xml" />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon" />
+        <link rel="alternate icon" sizes="any" href="/icons/Na.svg" type="image/svg+xml" />
       </Head>
       {/* <ToggleMode /> */}
       {isFlowerFall && !isMobile && <YoutubeSong />}
