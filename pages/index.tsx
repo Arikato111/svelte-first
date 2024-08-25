@@ -6,7 +6,6 @@ import FlowerIcon from "@/components/icons/FlowerIcon";
 import GithubIcon from "@/components/icons/GithubIcon";
 import LinkedinIcon from "@/components/icons/LinkedinIcon";
 import OnlyFansIcon from "@/components/icons/OnlyFansIcon";
-import YoutubeIcon from "@/components/icons/YoutubeIcon";
 import ThreeWord from "@/components/ThreeWord";
 import Projects from "@/Data/ProjectsData.json";
 import Head from "next/head";
@@ -14,6 +13,7 @@ import Link from "next/link";
 import Certificates from "../Data/CertificatesData.json";
 import { DefaultMetaTag } from "@/components/MetaTag";
 import { MouseEvent } from "react";
+import WorkIcon from "@/components/icons/WorkIcon";
 
 type HomeProps = {
   isFlowerFall: boolean;
@@ -87,11 +87,11 @@ export default function Home({ isFlowerFall, changeFlowerFall }: HomeProps) {
                 Icon={LinkedinIcon}
               />
             </a>
-            <a href="https://youtube.com/@Arikato111">
+            <a href="https://resume.nawasan.dev">
               <ButtonContact
                 Class="mobile-size"
-                Icon={YoutubeIcon}
-                title="Youtube"
+                Icon={WorkIcon}
+                title="Resume"
               />
             </a>
             <a
