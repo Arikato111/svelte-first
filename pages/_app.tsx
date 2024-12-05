@@ -49,6 +49,14 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" sizes="32x32" href="/favicon.ico" type="image/x-icon" />
         <link rel="alternate icon" sizes="any" href="/icons/Na.svg" type="image/svg+xml" />
       </Head>
+      <noscript>
+        <meta httpEquiv="refresh" content="2; URL=https://html.nawasan.dev" />
+        <div
+          style={{ textAlign: "center", position: "fixed", width: "100%", height: "100%", backgroundColor: "white" }}>
+          <h1 className='md:text-6xl text-center'>redirect to no script page</h1>
+        </div>
+      </noscript>
+
       {/* <ToggleMode /> */}
       {isFlowerFall && !isMobile && <YoutubeSong />}
       <AppComponent
