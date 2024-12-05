@@ -2,16 +2,11 @@
     "thai_name": "ณวสันต์  วิศิษฏ์ศิงขร",
     "name": "Nawasan Wisitsingkhon",
     "username": "Arikato111",
-    "detail": "กำลังศึกษาอยู่ที่มหาวิทยาลัย เพราะว่าชอบแนวคิดโอเพ่นซอร์ส ดังนั้นจึงเปิด source code ของหลายๆ อย่างที่เขียนเอาไว้ที่ github แม้ว่าจะมีจำนวนไม่มาก แต่ก็สามารถเข้าชม github ได้ที่หน้า Contacts",
+    "detail": "My name is Nawasan, a person who is familiar with technology, interested in open-source, uses Linux, and writes the code. I like simple things, and happy to learn what I interested. I like the programming languages which is make sense to write and simple to read, Yes I like Rust.",
     "contact": {
         "github": "https://github.com/Arikato111",
         "linkedin": "https://www.linkedin.com/in/nawasan/",
         "youtube": "https://youtube.com/@Arikato111"
-    },
-    "education": {
-        "name": "Ubon Ratchathani University",
-        "faculty": "Science",
-        "major": "information and communication technology"
     },
     "questions": [
         {
