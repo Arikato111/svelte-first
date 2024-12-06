@@ -52,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <noscript>
         <meta httpEquiv="refresh" content="2; URL=https://html.nawasan.dev" />
         <div
-          style={{ textAlign: "center", position: "fixed", width: "100%", height: "100%", backgroundColor: "white" }}>
+          style={{ textAlign: "center", position: "fixed", width: "100%", height: "100vh", backgroundColor: "white" }}>
           <h1 className='md:text-6xl text-center'>redirect to no script page</h1>
         </div>
       </noscript>
